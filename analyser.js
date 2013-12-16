@@ -5,7 +5,7 @@ var parser = require('./parser')
 function Analyser(config) {
 	var defaults = {
 		aliases: {},
-		ignores: [],
+		ignores: ['pyfibot'],
 		relationshipDecay: 0.0001,
 		activityDecay: 0.001,
 		heuristics: {

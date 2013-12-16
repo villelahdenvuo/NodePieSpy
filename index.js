@@ -3,9 +3,11 @@ var sf = require('slice-file')
 	, parse = require('./parser')
 	, api = require('./api');
 
+var lines = 1000;
+
 var node = new Analyser();
 node.addHeuristic('adjacency');
-sf('../../irclogs/Freenode/#node.js.log').follow(-300).on('data', function (chunk) {
+sf('../../irclogs/Freenode/#node.js.log').follow(-lines).on('data', function (chunk) {
 	var data = parse(chunk);
 	if (data) {
 		node.infer(data);
@@ -14,24 +16,24 @@ sf('../../irclogs/Freenode/#node.js.log').follow(-300).on('data', function (chun
 
 var kapsi = new Analyser();
 kapsi.addHeuristic('adjacency');
-sf('../../irclogs/IRCnet/#kapsi.fi.log').follow(-300).on('data', function (chunk) {
+sf('../../irclogs/IRCnet/#kapsi.fi.log').follow(-lines).on('data', function (chunk) {
 	var data = parse(chunk);
 	if (data) {
 		kapsi.infer(data);
 	}
 });
 
-var mc = new Analyser();
-mc.addHeuristic('adjacency');
-sf('../../irclogs/IRCnet/#minecraft.log').follow(-300).on('data', function (chunk) {
+var asm = new Analyser();
+asm.addHeuristic('adjacency');
+sf('../../irclogs/IRCnet/!assembly.log').follow(-lines).on('data', function (chunk) {
 	var data = parse(chunk);
 	if (data) {
-		mc.infer(data);
+		asm.infer(data);
 	}
 });
 
 
 
-var web = new api({'node': node, 'kapsi': kapsi, 'mc': mc}, {port: 36536});
+var web = new api({'node': node, 'kapsi': kapsi, 'asm': asm}, {port: 36536});
 
 web.start();

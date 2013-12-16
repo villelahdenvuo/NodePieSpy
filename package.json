@@ -1,7 +1,7 @@
 {
 	"name": "node-piespy",
 	"preferGlobal": true,
-	"version": "0.0.1",
+	"version": "0.1.0",
 	"author": "Ville Lahdenvuo <tuhoojabotti@gmail.com>",
 	"description": "A PieSpy competitor powered by Node.",
 	"keywords": ["irc", "piespy", "log", "analysis", "social", "diagram"],
@@ -10,7 +10,9 @@
 		"slice-file": "0.2.x",
 		"optimist": "0.5.x",
 		"moment": "2.0.x",
-		"cjson": "0.2.x"
+		"cjson": "0.2.x",
+		"express": "3.4.x",
+		"cors": "2.1.x"
 	},
 	"license": "MIT",
 	"engines": {
