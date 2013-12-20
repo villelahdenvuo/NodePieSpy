@@ -10,10 +10,9 @@ module.exports = function LogParser(msg) {
 		time.hour(parseInt(result[1], 10));
 		time.minute(parseInt(result[2], 10));
 		time.second(0);
-
 		return {
 			/*"time": time,*/
-			"nick": result[3].toLowerCase().trim(),
+			"nick": result[3].trim(),
 			"msg": result[4]
 		}
 	}

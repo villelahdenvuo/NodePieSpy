@@ -4,7 +4,10 @@ var parser = require('./parser')
 
 function Analyser(config) {
 	var defaults = {
-		aliases: {},
+		aliases: {
+			'bjuutie': 'Bjuuti',
+		},
+		postfixes: ['_', '\\^', '-'],
 		ignores: ['pyfibot'],
 		relationshipDecay: 0.0001,
 		activityDecay: 0.001,
@@ -15,6 +18,10 @@ function Analyser(config) {
 		}
 	}
 	this.config = cjson.extend(defaults, config);
+
+	this.config.postfixes = this.config.postfixes.map(function (f) {
+		return new RegExp(f + '+$');
+	});
 
 	this.heuristics = [];
 
@@ -27,8 +34,18 @@ Analyser.prototype.addHeuristic = function (name) {
 };
 
 Analyser.prototype.infer = function (data) {
-	if (this.config.ignores.indexOf(data.nick.toLowerCase()) !== -1) {
+	var config = this.config, nickLC = data.nick.toLowerCase();
+
+	config.postfixes.forEach(function (f) {
+		data.nick = data.nick.replace(f, '');
+	});
+
+	if (config.ignores.indexOf(nickLC) !== -1) {
 		return;
+	}
+
+	if (nickLC in config.aliases) {
+		data.nick = config.aliases[nickLC];
 	}
 
 	this.heuristics.forEach(function (heuristic) {
@@ -86,6 +103,7 @@ function Edge(source, target) {
 }
 
 Edge.prototype.toString = function () {
+	console.log(this);
 	return hashCode(this.source) + hashCode(this.target);
 };
 

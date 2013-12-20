@@ -32,8 +32,15 @@ sf('../../irclogs/IRCnet/!assembly.log').follow(-lines).on('data', function (chu
 	}
 });
 
+var cb2 = new Analyser();
+cb2.addHeuristic('adjacency');
+sf('../../irclogs/IRCnet/#cb2.log').follow(-lines).on('data', function (chunk) {
+	var data = parse(chunk);
+	if (data) {
+		cb2.infer(data);
+	}
+});
 
-
-var web = new api({'node': node, 'kapsi': kapsi, 'asm': asm}, {port: 36536});
+var web = new api({'node': node, 'kapsi': kapsi, 'asm': asm, 'cb2': cb2}, {port: 36536});
 
 web.start();
