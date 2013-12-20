@@ -12,7 +12,7 @@ function WebAPI(analysers, config) {
 	});
 }
 
-WebAPI.prototype.rest = function (req, res) {
+WebAPI.prototype.getChannel = function (req, res) {
 	var channel = req.params.channel;
 
 	if (!(channel in this.analysers)) {
@@ -23,18 +23,23 @@ WebAPI.prototype.rest = function (req, res) {
 
 	var analyser = this.analysers[channel];
 
-	//res.writeHead(200, {'Content-Type': 'text/plain'});
 	res.send({
 		nodes: analyser.nodes,
 		edges: analyser.edges
 	});
+};
 
+WebAPI.prototype.getChannels = function(req, res) {
+	res.send(Object.keys(this.analysers));
 };
 
 WebAPI.prototype.start = function () {
+	this.api.get('/channel', cors(), this.getChannels.bind(this));
+	this.api.get('/channel/:channel.json', cors(), this.getChannel.bind(this));
+
 	this.api.listen(this.config.port);
 
-	this.api.get('/:channel.json', cors(), this.rest.bind(this));
+	return this;
 };
 
 module.exports = WebAPI;
