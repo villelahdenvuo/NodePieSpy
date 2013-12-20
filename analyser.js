@@ -1,6 +1,10 @@
 var parser = require('./parser')
 	, cjson = require('cjson')
-	, Node = require('./node');
+	, Node = require('./data-structures/node')
+	, Edge = require('./data-structures/edge');
+
+var toList = require('./algorithms/to-list')
+	, bfs = require('./algorithms/bfs');
 
 function Analyser(config) {
 	var defaults = {
@@ -61,6 +65,10 @@ Analyser.prototype.addNode = function (nick) {
 	}
 };
 
+Analyser.prototype.hasNode = function (nick) {
+	return nick in this.nodes;
+};
+
 Analyser.prototype.addEdge = function (source, target, weight) {
 	//console.log('adding edge', source + '-' + target);
 	if (source == target || weight < 0) {
@@ -93,21 +101,12 @@ Analyser.prototype.removeNode = function (nick) {
 	}
 };
 
-module.exports = Analyser;
-
-
-function Edge(source, target) {
-	this.source = source;
-	this.target = target;
-	this.weight = 0;
-}
-
-Edge.prototype.toString = function () {
-	console.log(this);
-	return hashCode(this.source) + hashCode(this.target);
+Analyser.prototype.getList = function () {
+	return toList(this.nodes, this.edges);
 };
 
+Analyser.prototype.bfs = function(start) {
+	return bfs(start, toList(this.nodes, this.edges));
+};
 
-function hashCode(s) {
-	return s.split("").reduce(function(a,b){a=((a<<5)-a)+b.charCodeAt(0);return a&a},0); 
-}
+module.exports = Analyser;

@@ -1,6 +1,3 @@
-
-var Node = require('../node');
-
 function AdjacencyInference(analyser, config) {
 	this.analyser = analyser;
 	this.config = config;
