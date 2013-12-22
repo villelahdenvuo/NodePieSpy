@@ -54,6 +54,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-github-pages');
   grunt.loadNpmTasks('grunt-contrib-copy');
 
-  grunt.registerTask('docs', ['copy:docs', 'githubPages:docs']);
+  grunt.registerTask('docs', ['jsdoc', 'copy:docs', 'githubPages:docs']);
   grunt.registerTask('default', ['jshint', 'nodeunit', 'jsdoc']);
 };
