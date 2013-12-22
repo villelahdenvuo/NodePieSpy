@@ -29,21 +29,31 @@ module.exports = function(grunt) {
         spawn: false,
       },
     },
-  }/*,
-  'gh-pages': {
-    options: {
-      base: 'doc',
-      repo: 'git@github.com:tuhoojabotti/NodePieSpy.git'
-    },
-    src: ['**']
-  }*/
+  },
+  copy: {
+    docs: {
+      files: [
+          {expand: true, cwd: 'doc/', src: ['**'], dest: '_doc/'}
+      ]
+    }
+  },
+  githubPages: {
+    docs: {
+      options: {
+        commitMessage: 'Update doc.'
+      },
+      src: '_doc'
+    }
+  }
   });
 
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-nodeunit');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-jsdoc');
-  //grunt.loadNpmTasks('grunt-gh-pages');
+  grunt.loadNpmTasks('grunt-github-pages');
+  grunt.loadNpmTasks('grunt-contrib-copy');
 
+  grunt.registerTask('docs', ['copy:docs', 'githubPages:docs']);
   grunt.registerTask('default', ['jshint', 'nodeunit', 'jsdoc']);
 };
