@@ -1,21 +1,41 @@
 {
-	"name": "node-piespy",
-	"preferGlobal": true,
-	"version": "0.0.0",
-	"author": "Ville Lahdenvuo <tuhoojabotti@gmail.com>",
-	"description": "A PieSpy competitor powered by Node.",
-	"keywords": ["irc", "piespy", "log", "analysis", "social", "diagram"],
-	"dependencies": {
-		"colors": "*",
-		"slice-file": "0.2.x",
-		"optimist": "0.5.x",
-		"moment": "2.0.x",
-		"cjson": "0.2.x",
-		"express": "3.4.x",
-		"cors": "2.1.x"
-	},
-	"license": "MIT",
-	"engines": {
-		"node": ">=0.10"
-	}
+  "name": "node-piespy",
+  "preferGlobal": true,
+  "version": "0.1.0",
+  "repository": "https://github.com/tuhoojabotti/NodePieSpy",
+  "author": "Ville Lahdenvuo <tuhoojabotti@gmail.com>",
+  "description": "A PieSpy competitor powered by Node.",
+  "keywords": [
+    "irc",
+    "piespy",
+    "log",
+    "analysis",
+    "social",
+    "diagram"
+  ],
+  "scripts": {
+    "start": "node ./lib/index.js",
+    "test": "grunt"
+  },
+  "dependencies": {
+    "colors": "*",
+    "slice-file": "0.2.x",
+    "optimist": "0.5.x",
+    "moment": "2.0.x",
+    "cjson": "0.2.x",
+    "express": "3.4.x",
+    "cors": "2.1.x"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-jshint": "~0.6.3",
+    "grunt-contrib-nodeunit": "~0.2.2",
+    "grunt-jsdoc": "~0.4.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-github-pages": "0.0.4"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10"
+  }
 }
