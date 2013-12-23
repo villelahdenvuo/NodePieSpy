@@ -17,7 +17,8 @@ module.exports = function (grunt) {
       all: {
         src: ['README.md', 'lib/**/*.js', 'test/**/*.js'],
         options: {
-          destination: 'doc'
+          destination: 'doc',
+          configure: 'jsdoc.json'
         }
       }
     },
@@ -33,7 +34,8 @@ module.exports = function (grunt) {
   copy: {
     docs: {
       files: [
-          {expand: true, cwd: 'doc/', src: ['**'], dest: '_doc/'}
+          {expand: true, cwd: 'doc/', src: ['**'], dest: '_doc/'},
+          {expand: true, src: ['media/**'], dest: '_doc/'}
       ]
     }
   },
@@ -55,5 +57,6 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
 
   grunt.registerTask('docs', ['jsdoc', 'copy:docs', 'githubPages:docs']);
-  grunt.registerTask('default', ['jshint', 'nodeunit', 'jsdoc']);
+  grunt.registerTask('default', ['jshint', 'nodeunit']);
+  grunt.registerTask('test', ['jshint', 'nodeunit']);
 };
