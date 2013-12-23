@@ -1,8 +1,7 @@
 #NodePieSpy
 
-<a href="http://tuhoojabotti.github.io/NodePieSpy-Client/" title="Social graph of #node.js">
-<img src="./media/nodepiespy_nodejs.png" alt="Social graph of #node.js" />
-</a>
+
+[![Social graph of #node.js](./media/nodepiespy_nodejs.png)](http://tuhoojabotti.github.io/NodePieSpy-Client/)
 
 *A program for analyzing IRC chat logs in a fun interactive way inspired by [piespy](www.jibble.org/piespy/).*
 
