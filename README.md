@@ -3,7 +3,7 @@
 
 [![Social graph of #node.js](./media/nodepiespy_nodejs.png)](http://tuhoojabotti.github.io/NodePieSpy-Client/)
 
-*A program for analyzing IRC chat logs in a fun interactive way inspired by [piepsy](www.jibble.org/piespy/).*
+*A program for analyzing IRC chat logs in a fun interactive way inspired by [piespy](www.jibble.org/piespy/).*
 
 ## Features
 
