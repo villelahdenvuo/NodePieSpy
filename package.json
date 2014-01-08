@@ -14,7 +14,7 @@
     "diagram"
   ],
   "scripts": {
-    "start": "node ./lib/index.js",
+    "start": "node index.js",
     "test": "grunt"
   },
   "dependencies": {

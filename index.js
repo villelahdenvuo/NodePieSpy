@@ -1,9 +1,9 @@
 var sf = require('slice-file')
-	, Analyser = require('./analyser')
-	, parse = require('./parser')
-	, api = require('./api');
+	, Analyser = require('./lib/analyser')
+	, parse = require('./lib/parser')
+	, api = require('./lib/api');
 
-var lines = 1000;
+var lines = 2000;
 
 var chans = {
 	'cb2': 'IRCnet/#cb2.log',
