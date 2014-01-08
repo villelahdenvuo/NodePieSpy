@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Class: Analyser</title>
+    <title>JSDoc: Class: Graph</title>
     
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
     
-    <h1 class="page-title">Class: Analyser</h1>
+    <h1 class="page-title">Class: Graph</h1>
     
     
 
@@ -27,7 +27,7 @@
     
 <header>
     <h2>
-    Analyser
+    Graph
     </h2>
     
 </header>  
@@ -39,7 +39,7 @@
     
         
 <dt>
-    <h4 class="name" id="Analyser"><span class="type-signature"></span>new Analyser<span class="signature">(config)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="Graph"><span class="type-signature"></span>new Graph<span class="signature">()</span><span class="type-signature"></span></h4>
     
     
 </dt>
@@ -47,7 +47,7 @@
     
     
     <div class="description">
-        <p>Analyser is an object that is used to analyse a graph.</p>
+        <p>Represents an graph.</p>
     </div>
     
 
@@ -55,54 +55,6 @@
     
     
     
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-	<tr>
-		
-		<th>Name</th>
-		
-		
-		<th>Type</th>
-		
-		
-		
-		
-		
-		<th class="last">Description</th>
-	</tr>
-	</thead>
-	
-	<tbody>
-	
-	
-        <tr>
-            
-                <td class="name"><code>config</code></td>
-            
-            
-            <td class="type">
-            
-                
-<span class="param-type">Object</span>
-
-
-            
-            </td>
-            
-            
-            
-            
-            
-            <td class="description last"><p>Values to override default configuration.</p></td>
-        </tr>
-	
-	
-	</tbody>
-</table>
     
     
     
@@ -128,7 +80,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        lib/analyser.js, line 13
+        lib/data-structures/graph.js, line 8
     </li></ul></dd>
     
     
@@ -174,7 +126,7 @@
         <dl>
             
 <dt>
-    <h4 class="name" id="addHeuristic"><span class="type-signature"></span>addHeuristic<span class="signature">(name)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="addEdge"><span class="type-signature"></span>addEdge<span class="signature">(source, target, weight)</span><span class="type-signature"></span></h4>
     
     
 </dt>
@@ -182,7 +134,7 @@
     
     
     <div class="description">
-        <p>Add a new heuristic to the analyser.</p>
+        <p>Add an edge between two vertices. If it already exists, it's weight will be increased.</p>
     </div>
     
 
@@ -216,7 +168,7 @@
 	
         <tr>
             
-                <td class="name"><code>name</code></td>
+                <td class="name"><code>source</code></td>
             
             
             <td class="type">
@@ -232,7 +184,53 @@
             
             
             
-            <td class="description last"><p>Name of the heuristic, it will be loaded from heuristics folder.</p></td>
+            <td class="description last"><p>From vertex</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>target</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>To vertex</p></td>
+        </tr>
+	
+	
+	
+        <tr>
+            
+                <td class="name"><code>weight</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>Weight of the edge</p></td>
         </tr>
 	
 	
@@ -263,7 +261,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        lib/analyser.js, line 43
+        lib/data-structures/graph.js, line 40
     </li></ul></dd>
     
     
@@ -291,7 +289,7 @@
         
             
 <dt>
-    <h4 class="name" id="bfs"><span class="type-signature"></span>bfs<span class="signature">(label)</span><span class="type-signature"> &rarr; {Array}</span></h4>
+    <h4 class="name" id="addNode"><span class="type-signature"></span>addNode<span class="signature">(label)</span><span class="type-signature"></span></h4>
     
     
 </dt>
@@ -299,7 +297,7 @@
     
     
     <div class="description">
-        <p>Compute a breadth-first-tree from the graph.</p>
+        <p>Add a vertex to the graph. If it already exists, it's weight will be increased.</p>
     </div>
     
 
@@ -349,7 +347,7 @@
             
             
             
-            <td class="description last"><p>The label to start the bfs from.</p></td>
+            <td class="description last"><p>Label for the vertex.</p></td>
         </tr>
 	
 	
@@ -380,7 +378,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        lib/analyser.js, line 84
+        lib/data-structures/graph.js, line 17
     </li></ul></dd>
     
     
@@ -401,30 +399,6 @@
     
     
     
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    <ul>
-<li>A tree represented as an path array.</li>
-</ul>
-</div>
-
-
-
-<dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
-<span class="param-type">Array</span>
-
-
-	</dd>
-</dl>
-
-        
     
     
 </dd>
@@ -432,7 +406,7 @@
         
             
 <dt>
-    <h4 class="name" id="getList"><span class="type-signature"></span>getList<span class="signature">()</span><span class="type-signature"> &rarr; {Array}</span></h4>
+    <h4 class="name" id="hasNode"><span class="type-signature"></span>hasNode<span class="signature">(label)</span><span class="type-signature"> &rarr; {Boolean}</span></h4>
     
     
 </dt>
@@ -440,100 +414,7 @@
     
     
     <div class="description">
-        <p>Compute an adjacency list representation of the graph.</p>
-    </div>
-    
-
-    
-    
-    
-    
-    
-    
-    
-<dl class="details">
-    
-        
-    
-    
-    
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        lib/analyser.js, line 75
-    </li></ul></dd>
-    
-    
-    
-    
-    
-    
-    
-</dl>
-
-    
-    
-
-    
-
-    
-    
-    
-    
-    
-    <h5>Returns:</h5>
-    
-            
-<div class="param-desc">
-    <ul>
-<li>An adjacency list representation of the graph</li>
-</ul>
-</div>
-
-
-
-<dl>
-	<dt>
-		Type
-	</dt>
-	<dd>
-		
-<span class="param-type">Array</span>
-
-
-	</dd>
-</dl>
-
-        
-    
-    
-</dd>
-
-        
-            
-<dt>
-    <h4 class="name" id="infer"><span class="type-signature"></span>infer<span class="signature">(data)</span><span class="type-signature"></span></h4>
-    
-    
-</dt>
-<dd>
-    
-    
-    <div class="description">
-        <p>Processes a piece of data with currently active heuristics.</p>
+        <p>Check if a given label exists in the graph.</p>
     </div>
     
 
@@ -567,13 +448,13 @@
 	
         <tr>
             
-                <td class="name"><code>data</code></td>
+                <td class="name"><code>label</code></td>
             
             
             <td class="type">
             
                 
-<span class="param-type">Object</span>
+<span class="param-type">String</span>
 
 
             
@@ -583,7 +464,7 @@
             
             
             
-            <td class="description last"><p>Data object</p></td>
+            <td class="description last"><p>The label to check</p></td>
         </tr>
 	
 	
@@ -614,7 +495,148 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        lib/analyser.js, line 51
+        lib/data-structures/graph.js, line 30
+    </li></ul></dd>
+    
+    
+    
+    
+    
+    
+    
+</dl>
+
+    
+    
+
+    
+
+    
+    
+    
+    
+    
+    <h5>Returns:</h5>
+    
+            
+<div class="param-desc">
+    <ul>
+<li>Whether the label is in the graph or not</li>
+</ul>
+</div>
+
+
+
+<dl>
+	<dt>
+		Type
+	</dt>
+	<dd>
+		
+<span class="param-type">Boolean</span>
+
+
+	</dd>
+</dl>
+
+        
+    
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="removeNode"><span class="type-signature"></span>removeNode<span class="signature">(label)</span><span class="type-signature"></span></h4>
+    
+    
+</dt>
+<dd>
+    
+    
+    <div class="description">
+        <p>Remove a vertex by it's label.</p>
+    </div>
+    
+
+    
+    
+    
+    
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+	<tr>
+		
+		<th>Name</th>
+		
+		
+		<th>Type</th>
+		
+		
+		
+		
+		
+		<th class="last">Description</th>
+	</tr>
+	</thead>
+	
+	<tbody>
+	
+	
+        <tr>
+            
+                <td class="name"><code>label</code></td>
+            
+            
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+            
+            
+            
+            
+            
+            <td class="description last"><p>The label to remove</p></td>
+        </tr>
+	
+	
+	</tbody>
+</table>
+    
+    
+    
+<dl class="details">
+    
+        
+    
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        lib/data-structures/graph.js, line 61
     </li></ul></dd>
     
     
