@@ -1,7 +1,8 @@
 var sf = require('slice-file')
 	, Analyser = require('./lib/analyser')
 	, parse = require('./lib/parser')
-	, api = require('./lib/api');
+	, api = require('./lib/api')
+	, cluster = require('cluster');
 
 var lines = 2000;
 
@@ -15,21 +16,32 @@ var chans = {
 	'minecraft': 'IRCnet/#minecraft.log'
 };
 
-Object.keys(chans).forEach(function (id) {
-	var analyser = new Analyser();
+if (cluster.isMaster) {
+  // Fork workers.
+  for (var i = 0; i < 5; i++) {
+    cluster.fork();
+  }
 
-	analyser.addHeuristic('adjacency');
+  cluster.on('exit', function(worker, code, signal) {
+    console.log('worker ' + worker.process.pid + ' died');
+  });
+} else {
+	Object.keys(chans).forEach(function (id) {
+		var analyser = new Analyser();
 
-	sf('../../irclogs/' + chans[id]).follow(-lines).on('data', processChunk.bind(analyser));
+		analyser.addHeuristic('adjacency');
 
-	chans[id] = analyser;
-});
+		sf('../../irclogs/' + chans[id]).follow(-lines).on('data', processChunk.bind(analyser));
 
-function processChunk(chunk) {
-	var data = parse(chunk);
-	if (data) {
-		this.infer(data);
+		chans[id] = analyser;
+	});
+
+	function processChunk(chunk) {
+		var data = parse(chunk);
+		if (data) {
+			this.infer(data);
+		}
 	}
-}
 
-var web = new api(chans, {port: 36536}).start();
+	var web = new api(chans, {port: 36536}).start();
+}
