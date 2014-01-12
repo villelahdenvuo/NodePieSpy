@@ -16,7 +16,7 @@
  * Frontend here with [D3.js](http://d3js.org/):
    * https://github.com/tuhoojabotti/NodePieSpy-Client
  * API currently running here:
-   * http://lahdenvuo.info/social/channel/node.js.json
+   * http://lahdenvuo.info/social/graph/node.js.json
 
 ## License (MIT)
 

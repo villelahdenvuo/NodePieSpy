@@ -15,7 +15,8 @@
   ],
   "scripts": {
     "start": "node index.js",
-    "test": "grunt"
+    "test": "grunt",
+    "example": "node example/example.js"
   },
   "dependencies": {
     "colors": "*",
