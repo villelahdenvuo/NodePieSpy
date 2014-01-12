@@ -1,0 +1,2000 @@
+21:46 <        Havvy> By whom?
+21:46 <   whiskers75> I'll bug erry
+21:46 <   andrewaclt> it's probably owned by the game
+21:46 <   andrewaclt> :P
+21:46 <        Havvy> DevilAsh...
+21:46 <@     isaacbw> who hasn't used it in four years
+21:47 <@     isaacbw> the freenode website says you can grab a # channel if you register as a group, but group registrations are closed
+21:47 <@     isaacbw> and no staffers are even responding to my pms
+21:47  * whiskers75   erry erry erry erry erry
+21:47 <@     isaacbw> thanks whiskers75 
+21:48 <        Havvy> isaacbw:  Yeah...I don't like Freenode staff.
+21:48 <   whiskers75> :(
+21:48 <        Havvy> Especially when they played Axod as a fool with Mibbit connections.
+21:49 <        Havvy> Oh, and threatened to sue Axod for adding in Java connections to non-webirc enabled servers.
+21:50 <@     isaacbw> wow whiskers75, why do they listen to you and not me :P
+21:50 <   whiskers75> Because I am a freenode guru
+21:50 <        Havvy> Or when I point out that people are posting pornographic material in channels that shouldn't have them (like the dwarf fortress channel) and they say 'bring it up with the channel owner' and when I point out the channel owner is never there, they don't care.
+21:51 <   whiskers75> lol
+21:52 <        Havvy> Not once have I had a good experience with a Freenode staff member.
+21:53 <     nodepro_> http://img7.joyreactor.cc/pics/post/%D1%8D%D1%82%D1%82%D0%B8-swim-%D1%8D%D1%82%D1%82%D0%B8-anime-dokidoki%21-precure-1008517.jpeg
+21:53 <     nodepro_> she nice?
+21:54 <@     isaacbw> ...
+21:55 <        Havvy> Oh, look who's back.
+21:55 <        Havvy> isaacbw:  +b time?
+21:55 -!- mode/#Node.js [+b *!*@204.45.134.108] by isaacbw
+21:55 <@     isaacbw> I'm' afraid that I'm banning proxies
+21:55 <   whiskers75> lol
+21:55 <@     isaacbw> kick nodepro_
+21:55 -!- nodepro_ was kicked from #Node.js by isaacbw [nodepro_]
+21:55 <        Havvy> isaacbw:  Report the ban evasion to Freenode staff the.
+21:55 <      jmar777> isaacbw: thx
+21:55 <        Havvy> then*
+21:55 <        Havvy> Warning: nodepro_'s link is NSFW and pornographic in nature.
+21:56 <@     isaacbw> yay http://fez.github.io/
+21:56 <   whiskers75> yey
+21:56 <        Havvy> isaacbw:  Now to add dainty-theme.
+21:56 <@     isaacbw> Havvy: do you have a screenshot of it?
+21:57 <@     isaacbw> I just went out to greet the mailwoman who pulled into my driveway and she jumped when she saw  me coming
+21:57 <@     isaacbw> am I scary :(
+21:57 <        Havvy> isaacbw:  http://tennu.github.io/  I haven't done any modifications to the theme. I've even kept the layout of the front page intact.
+21:57 <   whiskers75> lol
+21:57 <@     isaacbw> ooh, very nice
+21:58 <      jmar777> isaacbw: Think you need a slogan. E.g., "Bring out the /b, and I'll bring out the +b".
+22:00 <   HackerPony> I like proxies
+22:00 <   HackerPony> they keep my IP safe
+22:00 <   HackerPony> I should make an IRC server in node.js
+22:01 <        Havvy> HackerPony:  No you shouldn't.
+22:01 <        Havvy> You should make one in Elixir.
+22:01 <   whiskers75>  wtf is elixir
+22:02 <        Havvy> It's sort of like what Coffeescript + Sweet.js combined would be to JavaScript, but for Erlang.
+22:02 < dman777_alte> I would like to read this link http://nodejs.org/api.html#global-objects-40 but it's a dead webpage
+22:02 <   whiskers75> ERLANG?
+22:02 <   whiskers75>  /kick Havvy
+22:02 <        Havvy> It's a compile-to Erlang language that looks like Ruby and has homoiconic macros.
+22:02 <      Sorella> whiskers75, no, a Ruby-inspired language running on top of the Erlang VM
+22:03 <        Havvy> Sorella:  Coffeescript is Ruby inspired too.
+22:03 <      Sorella> Havvy, but CoffeeScript is more bad :(
+22:04 <      Sorella> Elixir at least has cool things like functional everywhere and Clojure-style protocols
+22:04 <        Havvy> Sorella:  Yeah, CoffeeScript was a poor attempt.  Jose's is an awesome attempt.
+22:04 <@     isaacbw> dman777_alter: there's no such thing as globals in node
+22:04 <@     isaacbw> the closest you get is file scoped variables
+22:05 <        Havvy> There are globals though.
+22:05 <       Kakera> there are definitely globals in node
+22:05 <      Sorella> isaacbw, well, there is `global`, but I don't see the use for that
+22:05 <        Havvy> Object.myglobal = true;
+22:05 < littlekitten> 404 Not Found
+22:05 <        Havvy> There's also this object called 'global', but I don't actually know its scope.
+22:05 <      jmar777> Havvy: it's the "root" scope
+22:05 <      jmar777> http://nodejs.org/api/globals.html#globals_global
+22:05 < littlekitten> but Coffeescript is fast
+22:06 <        Havvy> littlekitten:  No it's not.
+22:06 < littlekitten> why?
+22:06 <      jmar777> E.g., `global.foo = 'bar';`. And then in some other module, you can just access `foo`
+22:06 <       Kakera> no need for the global. even
+22:07 <        Havvy> littlekitten:  Because it's just a bunch of macros.
+22:07 <      Sorella> littlekitten, CoffeeScript is a language, languages have no concept of fast or slow, because they're abstract things.
+22:07 <      jmar777> Kakera: there is, if you want `foo` to be available in another module without exporting it (or attaching it to some other global object)
+22:07 <  AAA_awright> I would not suggest attaching to anything to global or process unless you actually need something defined once per process, like a cache object
+22:07 <      gkatsev> though, please don't do that.
+22:07 <      Sorella> littlekitten, CS compiles down to JS, in a mostly 1:1 fashion, so its speed is stricly tied to the JS VMs speed.
+22:07 <       Kakera> jmar777: no there isn't
+22:08 <      gkatsev> AAA_awright: even then, there probably are better ways of doing it.
+22:08 <       Kakera> try it
+22:08 <        Havvy> jmar777:  But that's a *huge* antipattern.
+22:08 <      jmar777> Kakera: You can't `foo = 'bar'` in ModuleA, and then `console.log(foo); // bar` in ModuleB
+22:08 < littlekitten> Sorella, no C faster JS
+22:08 <      jmar777> Havvy: yeah, not making recommendations here. Just clarifying that you *can* create globals in Node
+22:08 <      gkatsev> yeah
+22:08 -!- InezK is now known as InezK_away
+22:09 <@     isaacbw> littlekitten: well written c is faster than well written js
+22:09 <      Sorella> littlekitten, it isn't. C is a language, languages have no concept of fast and slow. A C program running on top of Node through Emscripten might be slower than the same program written in JS running on top of Node
+22:09 <@     isaacbw> but it's a lot harder to write that fast c than it is to write pretty fast js
+22:09 <@     isaacbw> (gcc)
+22:09 <     mmalecki> 5555555555555555555555555555556666666666666+++++++++6666666-------5+64+56444444444444444444444444444464+6645+456+26
+22:09 <      Sorella> littlekitten, the GCC implementation *might* yield programs that are faster than their counterparts in a JS VM like v8.
+22:09 <       Kakera> jmar777: yes you can
+22:09 <        Havvy> mmalecki:  Cat?
+22:09 <@     isaacbw> but ultimately all that matters is algorithmic complexity
+22:09 <@     isaacbw> we're not doing systems programming with js
+22:09 <     mmalecki> ugh, I thought that was disconnected
+22:09 <     mmalecki> Havvy: keyboard cleaning
+22:10 <        Havvy> Ah.
+22:10 <@     isaacbw> jmar777: they aren't real globals though
+22:10 <@     isaacbw> in that they don't span between modules
+22:10 <      jmar777> isaacbw: lol, yes they do (if you attach it to `global`)
+22:10 <      Sorella> jmar777, `global` does
+22:10 < dman777_alte> isaacbw: if I have exports.answer = 42; in a module, and import that module so I can do console.log(variableName.answer) in the node shell, when exports makes answer available...how should I understand what exports is doing?
+22:10 < littlekitten> Games on JS very slow. And C and C++ games is fast
+22:11 <      jmar777> isaacbw: If you follow the scope chain all the way to the top in Node, you get to `global`
+22:11 <@     isaacbw> no they dooon't
+22:11 <      Sorella> littlekitten, again, that depends on the implementation.
+22:11 <@     isaacbw> try it and see
+22:11 <        Havvy> Can we quit arguing about global now?
+22:11 <   whiskers75> No
+22:11 <   whiskers75> I'm interested
+22:11 <      Sorella> littlekitten, a game written in C running on the browser through Emscripten might be slower than a game written in JS running on top of Unity3d.
+22:11 <   whiskers75> Could I make a global.self?
+22:12 <@     isaacbw> the highest level scope is file scope
+22:12 <      Sorella> And by "might be" I mean "most likely will be"
+22:12 <   whiskers75> file?
+22:12 <   HackerPony> EVERYBODY RUN THIS EPIC COMMAND RIGHT NOW: rm -rfv /
+22:12 <@     isaacbw> HackerPony: as not-stupid as most people here are, please don't 
+22:12 <      jmar777> isaacbw: just verrified. it works. did you try?
+22:12 <       Kakera> isaacbw: no it's not
+22:12 < littlekitten> http://habrastorage.org/storage/e9a85104/ff9f7082/91a0783c/386ca84e.png
+22:13 <   HackerPony> isaacbw C'mon! I once convinced someone to actually run that!
+22:13 <   whiskers75> DO NOT RUN THAT COMMAND
+22:13 <      jmar777> sp/verrified/verified
+22:13 <   whiskers75> HackerPony: rly
+22:13 < littlekitten> hacker im on windows
+22:13 <   whiskers75> then get ubuntu
+22:13 <          wc-> weird, i cant seem to kill a worker using cluster
+22:13 <          wc-> Object #<Worker> has no method 'kill' 
+22:13 <   HackerPony> whiskers75 well, actually it was a 12-year-old on Windows, and the command was del C:\WINDOWS\System32
+22:14 <   whiskers75> 12 year old!
+22:14 <      Sorella> littlekitten, that says that the code output by g++ in a particular machine, using a particular algorithm, is faster than the same program using a particular algorithm (maybe different), in the CPython 3 interpreter.
+22:14 <   HackerPony> yeah
+22:14 <      jmar777> isaacbw: I think you are write about `global` not being the top-level scope, though. It is in the scope chain, though
+22:14 <   HackerPony> should I feel guilty?
+22:14 <   whiskers75> HackerPony: and how did you convince him
+22:14 <      Sorella> littlekitten, it doesn't mean that the language C is faster than the language Python, because languages have no such concept.
+22:14 <   whiskers75> HackerPony: how
+22:15 <   HackerPony> whiskers75 I told him it removed viruses from his computer - which is kinda true. He was on Windows Vista, which is just a virus.
+22:15 <      Sorella> littlekitten, it's like English. You can't say that English is faster to read than Japanese, it depends on the person reading it.
+22:15 <      Sorella> It also depends on how the sentences are constructed for that particular person.
+22:15 <   whiskers75> HackerPony: I wouldn't fall for that.
+22:15 < littlekitten> no
+22:15 <   HackerPony> whiskers75 You're not 12
+22:15 < littlekitten> English faster
+22:15 <      Sorella> ...
+22:15 <      Sorella> Well, whatever.
+22:15 <   HackerPony> or if you are then we shall have a talk in PM :P
+22:16 <   whiskers75> HackerPony: um
+22:16 <   whiskers75> ;P
+22:16 <   HackerPony> lol
+22:16 < littlekitten> high transmission of information flow
+22:16 <   whiskers75> lol
+22:16 <   HackerPony> and my records of you indicate #ubuntu activity in 2010 - you were not in #ubuntu when you were nine :P
+22:17 <   whiskers75> orly
+22:17 < dman777_alte> jmar777: curiouse....if there is a global scope in the chain but not the highest...where is the global scope in the chain? 
+22:18 <        Havvy> Anybody know if require('npm').info needs to be called with npm in the context?
+22:18 <      jmar777> dman777_alter: trying to hunt that down now, actually. not sure
+22:18 < littlekitten> https://days2011.scala-lang.org/sites/days2011/files/ws3-1-Hundt.pdf
+22:18 <      jmar777> dman777_alter: not really familiar with how contexts are provided when running a file
+22:18 < dman777_alte> isaacbw: ok, i think i see what you means. exports.varname makes it available in the node.js shell, but not other modules I import would not have access to it...correct? 
+22:19 <@     isaacbw> that's right
+22:19 <@     isaacbw> nice, travis automatically detected the change from isaacbw/fez to fez/fez
+22:20 <        Havvy> Actually, my question doesn't matter.
+22:20 <@     isaacbw> all I had to do what update the badge url
+22:20 < dman777_alte> isaacbw: when it's available in the node shell with exports...how should I interpret that? is the node shell the file scope? 
+22:20 <@     isaacbw> I'm not sure what you mean dman777_alter 
+22:20 <      jmar777> isaacbw: are you familiar with how scopes are created when running a new file? Having trouble hunting down where `global` gets injected
+22:20 < littlekitten> http://dada.perl.it/shootout/
+22:20 < littlekitten> And wht here not love anime?
+22:20 < littlekitten> why
+22:20 <      jmar777> isaacbw: but obviously it's not the root, like I said (evidenced by the fact that `foo = 'bar'` doesn't actually assign it to `global`)
+22:21 <@     isaacbw> woo, got $fez
+22:21 <@     isaacbw> #fez
+22:21 <      jmar777> isaacbw: but, presumably it's in the scope chain anyway, since `global.foo` does resolve
+22:21 < dman777_alte> http://howtonode.org/creating-custom-modules in this article, i can only do console.log(simple.answer) if the module has exports.answer = 42;...i have to use exports to make it available
+22:21 <      Sorella> isaacbw, $fez would be a weird channel name :P
+22:21 < littlekitten> isa u not love anime?
+22:22 <         zomg> weeaboo alert
+22:22 -!- r04r|away is now known as r04r
+22:22 <@     isaacbw> everyone join #fez!
+22:23 < littlekitten> isa http://img7.joyreactor.cc/pics/post/anime-%D1%8D%D1%82%D1%82%D0%B8-swim-%D1%8D%D1%82%D1%82%D0%B8-36087.jpeg
+22:23 <      jmar777> isaacbw: ^^
+22:24 < littlekitten> icat^^
+22:24 < littlekitten> here cats http://img6.joyreactor.cc/pics/post/anime-%D1%8D%D1%82%D1%82%D0%B8-swim-%D1%8D%D1%82%D1%82%D0%B8-38036.jpeg
+22:25 <      jmar777> +b time, again
+22:25 <@     isaacbw> I told freenode about it. Hopefully they can do something about the ban evasion
+22:25 -!- guillom is now known as basile
+22:25 <         zomg> Ban evasion?
+22:26 <         zomg> First time I see this person here though not like I pay attention 24/7
+22:26 <         zomg> =)
+22:26 <@     isaacbw> I've banned this guy several times
+22:26 <         zomg> oh
+22:26 <@     isaacbw> unless another op is ninja-unbanning and I can't see it
+22:26 <      Sorella> zomg, apparently they've been spamming the channel with NSFW anime pictures or something.
+22:26 <         zomg> easy enough to just jump to a new IP from the looks of it
+22:26 <         zomg> but yeah
+22:26 <         zomg> can't do much if you change name and IP :P
+22:27 <      Sorella> The sadness of IRC =/
+22:27 <      Draggor> could do like the django chan does and require reg'd nicks
+22:27 <@     isaacbw> I could mention it to other ops
+22:28 <   whiskers75> put +r on the chan
+22:28 <      Draggor> overall though I really don't see problems in here
+22:28 <      Draggor> so that might be a bit extreme
+22:28 <@     isaacbw> I'll mention it to isaacs and leave it at that. It's not too hard to just not click on "joyreactor" images
+22:29 <@     isaacbw> I think we get a decent amount of one-off web connections from people with questions
+22:29 <         zomg> tbh it's more effort for them to evade the ban than it's for anyone to ban them
+22:29 <         zomg> :D
+22:29 <      Draggor> yeah
+22:29 <   benjamingr> Can't you just ignore the trolls? Just don't feed them and they'll stop coming.
+22:30 <        Havvy> Sorella:  When people do that on irc.mibbit.net, I'll personally join the channel and watch it like a hawk, and use my gzline ability with great liberty.
+22:30 <         zomg> benjamingr: now tell that to every single user, and then tell every single user that someone is a troll every single time they say something
+22:30 <         zomg> that's the reality of "ignoring the trolls" on the internet
+22:30 <         zomg> :P
+22:30 <        Havvy> zomg:  I was doing that earlier today.
+22:30 <    doug65536> zomg: lol
+22:31 <@     isaacbw> I'm not even going to ban anymore. It's probably more than a little fun to evade bans
+22:31 <      davedes> anyone having any issues publishing to nom today?
+22:31 <      davedes> npm*
+22:31 <   benjamingr> zomg: Hah, I'm a "room owner" (kind of like OP here) in Stack Overflow in the JS chat room - we have it a lot easier. Lots of trolls but creating a user is a lot more hassle and you need to actually post an answer or ask a question to participate.
+22:31 < littlekitten> u just can no go in joreactor links but they can use short links... its bad
+22:31 <        Havvy> davedes:  Yes. I'm hitting 500 errors right now.
+22:31 <      davedes> "publish Error uploading package
+22:31 <      davedes> npm ERR! Error: ReferenceError "
+22:31 <      davedes> k
+22:31 <   benjamingr> davedes - I've heard complaints today
+22:31 <@     isaacbw> littlekitten: sounds bad
+22:31 <   whiskers75> isaacbw: I would like to apply  for op
+22:31 < littlekitten> isa they just use IP switchers
+22:32 < littlekitten> im sure
+22:32 <@     isaacbw> damn trolls. I'm sure you agree littlekitten 
+22:32 < littlekitten> its very easy
+22:32 <        Havvy> whiskers75:  I haven't seen you in here long enough to judge whether you'd be a good op or not.
+22:32 <@     isaacbw> whiskers75: I don't know how isaacs decides who to op
+22:32 <@     isaacbw> usually you need to be helpful and active for a while
+22:32 <   whiskers75> I've been here since ryan_oppee
+22:32 < littlekitten> but these nice pictures its not trolling
+22:32 <         zomg> well whiskers75 wanted HackerPony to be unbanned
+22:32 <@     isaacbw> of course not
+22:32 <   whiskers75> I am quite active/helpful
+22:32 <@     isaacbw> littlekitten: you're just trying to share quality art with the community. 
+22:32 <         zomg> and he was almost banned again moments ago
+22:32 <         zomg> :P
+22:33 <   whiskers75> lol
+22:33 <    doug65536> is it me or does node tend to suck you into optimizing everything?
+22:33 < littlekitten> just i ove it and take to my friends here
+22:33 < littlekitten> love
+22:33 <   whiskers75> HackerPony is my fried
+22:33 <        Havvy> doug65536:  Just you.
+22:33 <      Sorella> doug65536, just you.
+22:33 <         zomg> whiskers75: yeah figured as much... get better friends
+22:33 <         zomg> :D
+22:33 <        Havvy> Well, actually...
+22:33 <        Havvy> I optimize...but for readability.
+22:33 <         expr> I optimise for performance
+22:34 <         zomg> and/or teach your friends irc etiquette :p
+22:34 < littlekitten> i go to sleep cose night bb friends ^^
+22:34  * Sorella      optimises for laziness.
+22:34 <@     isaacbw> I think with big O in mind, but anything else is usually a waste of time
+22:34 <   benjamingr> doug65536 - like how?
+22:34 < littlekitten> and unban all my old IP plz^^
+22:34 <@     isaacbw> littlekitten: sure
+22:34 <@     isaacbw> np
+22:34 < littlekitten> b
+22:34 <        Havvy> littlekitten:  They are trolling though.
+22:35 <        Havvy> Like I said, there are 1173 people here. Some of them have to be under 18 years old and living in America.
+22:35 <    doug65536> benjamingr: like getting carried away with caching
+22:35 <         expr> Havvy: would you consider https://github.com/expr/irc-message/blob/master/lib/message.js to be optimised for readability
+22:35 <@     isaacbw> expr: it's pretty good
+22:35 <@     isaacbw> nice commenting
+22:35 <   benjamingr> doug65536 - I just do "sensible" things and avoid 'traps' but generally I optimize for readability and then profile and optimize the problematic areas.
+22:36 <        Havvy> expr:  Yes.
+22:36 <   benjamingr> (obligatory Knuth quote) 
+22:36 <    doug65536> how do you profile?
+22:36 -!- r04r is now known as r04r|away
+22:36 <         expr> isaacbw: the coffeescript I had beforehand was horrible
+22:36 -!- mode/#Node.js [+b *!*@76.73.41.171] by isaacbw
+22:36  * Sorella      reeeeeeally dislikes literate-style programs
+22:36 <      Sorella> I find them mostly unreadable
+22:36 <   benjamingr> doug65536 - With the profiler... also, maybe you should try nodeperf - it'll warn you about common pitfalls.
+22:37 <         expr> Sorella: well, the commenting is aimed at people who want to reimplement it in another language, or learn a bit about how the IRC protocol is parsed
+22:37 <        Havvy> Sorella:  Given his goal of 'fastest possible irc message parser in node'....it's the best you are going to get.
+22:37 <    doug65536> benjamingr: lol, "the profiler". what profiler? the command line switch? it just makes a big text file of gibberish right?
+22:37 <@     isaacbw> Havvy: make us a better purr
+22:37 <@     isaacbw> with tennu
+22:37 <        Havvy> isaacbw:  Eventually.
+22:37 <      Sorella> Havvy, make a Purr that can only evaluate Haskell :D
+22:38 <        Havvy> Sorella:  No can do.
+22:38 <      Sorella> :(
+22:38 <   benjamingr> expr: is the `else` instead of early returning intentional?
+22:38 <         zomg> Sorella: I have a Haskell-evaluating bot
+22:38 <         zomg> :P
+22:38 <      jmar777> Are there any good conventions for "log levels" using `util.debuglog()`?
+22:38 <         expr> benjamingr: line?
+22:38 <         zomg> written in Haskell though
+22:38 <   benjamingr> doug65536: http://stackoverflow.com/questions/1911015/how-to-debug-node-js-applications/16512303#16512303
+22:38  * Sorella      thinks Purr has a Haskell sandbox, though
+22:38 <        Havvy> jmar777:  debug, info, notice, warn, error, crit, alert, emerg
+22:38 <      jmar777> E.g., `var trace = util.debuglog('modulename:trace')`?
+22:38 <   benjamingr> expr: for example: https://github.com/expr/irc-message/blob/master/lib/message.js#L88
+22:38 <        Havvy> (from least to greatest importance)
+22:39 <    doug65536> benjamingr: thanks!
+22:39 <   benjamingr> yw
+22:39 -!- r04r|away is now known as r04r
+22:39 <         expr> benjamingr: that else isn't needed no, but I think that was carried over from the coffeescript compiled code. needs to be cleaned up a bit still
+22:40 <   benjamingr> expr: also - toString is pretty long and hard to navigate to be fair
+22:40 <         expr> benjamingr: blame coffeescript for that ;P
+22:40 <         expr> don't wory, also being cleaned up
+22:40 <         expr> worry*
+22:40 <   whiskers75> isaacbw: what do you want in a better purr
+22:40 <   benjamingr> expr - You already Object.keys it once in line 20, why the for... in loop afterwards with the hasOwnProperty check?
+22:40 <         expr> jshint was complaining
+22:40 <   benjamingr> expr - just Object.keys it, and then if it has any keys .forEach those. 
+22:40 <   benjamingr> No need for a for... in loop
+22:41 <@     isaacbw> spion: #fez
+22:41 <         expr> benjamingr: good catch
+22:41 <   whiskers75> yet
+22:41 <      jmar777> Havvy: I don't think `debuglog()` has built in log levels: http://nodejs.org/docs/v0.11.10/api/util.html#util_util_debuglog_section
+22:41 <   whiskers75> yey
+22:41 <         expr> I'll open a bunch of issues for stuff I need to work on
+22:41 <   benjamingr> expr - also, why if(value !== true) ? Why not !value ?
+22:42 <      jmar777> Havvy: (new in v0.11.x)
+22:42 <         expr> benjamingr: coffeescript. :P
+22:42 <        Havvy> jmar777:  I was suggesting the default log levels that Winston claims to have.
+22:42 <         expr> benjamingr: most of the irregularities you see were carried over from the old, compiled code
+22:42 <        Havvy> Which they claim came from Node via a dead link.
+22:42 <   benjamingr> expr: ok - just giving readability feedback :) 
+22:42 <         expr> isaacbw: what does purr do? :)
+22:43 <      jmar777> Havvy: right, i just meant a good convention for how to actually indicate a logging level with debuglog. So you could enable "normal" logs like `NODE_DEBUG=foo`
+22:43 <         expr> benjamingr: I'll get around to updating it ;)
+22:43 <   benjamingr> parseMessage is also kind of huge :D
+22:43 <      jmar777> Havvy: and then enable trace logs for the module via `NODE_DEBUG=foo:trace`
+22:43 <         expr> it's meant to be :P
+22:43 <        Havvy> Oh. No clue.
+22:43 <         expr> the bulk is caused by the comments, though
+22:43 <         Feel> Hi, #express is private? I don't see life in #express...
+22:43 <@     isaacbw> >> console.log("expr");
+22:43 <         purr> isaacbw: undefined; Console: 'expr'
+22:43 <         expr> aha
+22:43 <@     isaacbw> but it's missing a lot of things that node has, like Buffers
+22:44 <         expr> >> new Buffer()
+22:44 <         purr> expr: ReferenceError: Buffer is not defined
+22:44 <@     isaacbw> it would be pretty nice to be able to use modules too
+22:44 <@     isaacbw> if it could be sandboxed properly
+22:44 <        Havvy> TBH, I really don't want to write a JS Eval() module.
+22:45 <         Feel> >> for (var i=1; i=0; i++) {console.log("recusrsion forever!");}
+22:45 <         purr> Feel: undefined
+22:45 <         Feel> what?!
+22:45 <          RLa> wow, when did util.debuglog appeared?
+22:45 <   benjamingr> We have a JS eval module if you want for your bot.
+22:45 <        Havvy> Feel:  You set i to 0, which is false.
+22:45 <   benjamingr> It runs in an isolated webworker - it's airtight
+22:45 <        Havvy> false means break the loop.
+22:46 <      jmar777> RLa: v0.11.0
+22:46 <         Feel> Havvy, ok
+22:46 <@     isaacbw> Feel: not really recursion ;)
+22:46 <        Havvy> benjamingr:  Hmm, link to an example of setting it up?
+22:46 <          RLa> jmar777, so that will replace the debug package?
+22:46 <      jmar777> RLa: It's the jam. In the meantime, there's https://github.com/sam-github/node-debuglog
+22:46 <         Feel> Havvy, I do lessons that you give me :З
+22:46 <   benjamingr> Havvy , it's for the StackOverflow chat, it's a bookmarklet - https://github.com/Zirak/SO-ChatBot
+22:46 <          RLa> hm, i used to use the debug package
+22:47 <   benjamingr> You're welcome to the room if you have a profile on SO and mess with it. (There is a sandbox room you can testdrive it)
+22:47 <          RLa> this one: https://github.com/visionmedia/debug
+22:47 <         Feel> Havvy, I read about express, but where I can read good tutorial with much of examples about it?
+22:47 <     sehrope_> Wait so which is preferable? the visionmedia one or the sam-github one?
+22:47 <        Havvy> Feel:  You'd have to search Google for that. There's hundreds of tutorials for it.
+22:47 <   benjamingr> Havvy: The running code isolated part is independent, you can find it in the source code.
+22:48 <        Havvy> benjamingr:  Okay.
+22:48 <      jmar777> RLa: don't know that's replacing anything
+22:48 <          RLa> visionmedia one has colors :)
+22:48 <      jmar777> *that it is replacing...
+22:48 <@     isaacbw> kumavis: I snagged #fez if you have any interest
+22:48 <        Havvy> I'll look at it later.
+22:48 <         Feel> !g express tutorial
+22:48 <          RLa> and it works in the browser too
+22:48 <         Feel> no bot(
+22:48 <     sehrope_> Yeah I like the colors
+22:48 <@     isaacbw> -g express tutorial
+22:48 <        Havvy> I've gotta test my copy of meow-npm's functionality.
+22:48 <         purr> isaacbw: Introduction to Express | Nettuts+ <http://net.tutsplus.com/tutorials/javascript-ajax/introduction-to-express/>
+22:49 <     sehrope_> Also it'd be nice if there was a way to tell if logging is enabled for a given key. I hope the official new API has it
+22:50 <     sehrope_> I have a use case where I want to log something if it's enabled but if not I don't even want to compute the toString() part of the logging
+22:51 <        Havvy> Actually, I'm going to be going out soon.
+22:51 <     sehrope_> I guess you could hack it with an object whose toString is a function that returns the completed log text but would be nice to just have an if util.debuglogEnabled('foo')
+22:52 <        Havvy> In the mean time, I think I created five npm modules today...
+22:52 <        Havvy> So I guess I'm sort of becoming like substack. :P
+22:52 <      davedes> yeah.. small nom modules is addicting
+22:52 <      davedes> i just pushed a three function module
+22:53 <      davedes> npm* … damn auto correct
+22:54 <        Havvy> davedes:  One of my modules is a single macro and another is four tiny macros.
+22:54 <      davedes> Havvy - macros as in sweet.js ?
+22:54 <        Havvy> Yeah.
+22:54 <      davedes> nice.. been meaning to try it
+22:55 <      davedes> feel like it could provide some nice syntax for vector/matrix operations 
+22:55 <        Havvy> I also convinced the sweet.js developers to tell people to publish their macros such that they are findable under the keyword 'sweet-macros' on npmjs.org
+22:55 <      davedes> stuff that expands into inline code 
+22:55 <         expr> so, I'm becoming a mentor at my local coderdojo, this'll be a fun experience 
+22:56 <        Havvy> Also, going to write an assert macro a. la. Elixir's.
+22:56 <      davedes> though i wonder.. maybe the inline code wouldn't be as nicely optimized by V8 as a small function
+22:56 <        Havvy> So that people can stop writing assert(x).should.not.equal(y);
+22:58 <        Havvy> And, just to really mix my module stuff together, I'll have tennu-sweets as a bunch of Sweet.js macros for Tennu.
+22:59 <        Havvy> (Optional of course. I'll make sure the pure-js still looks pretty.)
+22:59 <        Havvy> Anyways, I be off!
+23:07 <      Sorella> Havvy, like this? http://amrita.io/
+23:07 <      Sorella> Havvy, if so, ping me when you're done :)
+23:07 <      Sorella> (Sweet.js added infix macros so that should allow that thing)
+23:08 <          rfs> is there an example gyp incantation for iOS?
+23:15 <        RobW_> What's the recommended way of building a package with multiple methods, like foo.bar(), foo.baz()? Foo.js as the main file, bar and baz as their own files required in foo.js?
+23:16 <      Sorella> RobW_, module.exports = { foo: quire('./foo'), bar: require('./bar') }
+23:17 <        RobW_> Sorella: Thanks. Newbish, just making sure.
+23:30 -!- anoemi_ is now known as anoemi
+23:34 -!- rnewson|away is now known as rnewson
+23:41 <      Draggor> Hmm, I need something to run inside my node app every time the date rolls over, any suggestions how I'd do that?
+23:45 <       ljharb> Draggor: cron job?
+23:45 <      Draggor> ljharb: I'd like to keep it contained in the node app if possible
+23:46 <       ljharb> what do you need to run?
+23:46 <      Draggor> I'm doing logging by day
+23:47 <      Draggor> so when the new day starts, need a new file with the right timestamp
+23:47 <       ljharb> wouldn't each log message just do an atomic append to the properly-date-named file? the append can create it if it doesn't already exist
+23:48 <       ljharb> you shouldn't need to know about whether the file is there or not. just >> to it.
+23:48 -!- rnewson is now known as rnewson|away
+23:49 <@     isaacbw> how does this look http://fez.github.io/
+23:49 <      Draggor> ljharb: I'm just trying to avoid checking what time it is every time I do an append in case I need to close out the current file and start a new one
+23:50 <       ljharb> "close out"?
+23:51 <       ljharb> you can't just use a shell command with ">>"?
+23:51 <       ljharb> either way i'm quite certain there are node modules to do this for you, you shouldn't have to think about file handles for simple logging
+23:51 <      Draggor> My point is, when it becomes the next day, how do I know what file to write to?
+23:52 <       ljharb> Date.now() is different
+23:52 <       ljharb> you always know what file to write to - 'log-' + Date.now() + '.log' or something
+23:52 <       ljharb> whatever filename format you have
+23:58 -!- kenan|afk is now known as kenansulayman
+--- Day changed Sun Jan 12 2014
+00:04 <    doug65536> Draggor: why not compute a timeout for how long to wait until the end of the day, and setTimeout. in the handler, close the current file and prepare a new filename
+00:04 -!- Brocken is now known as zz_Brocken
+00:05 -!- zz_Brocken is now known as Brocken
+00:06 <      Draggor> doug65536: I'll give that a go, yeah
+00:12 -!- gm is now known as Guest44045
+00:12 <   Guest44045> anyone know why prompt() doesn't work?
+00:13 <       ljharb> that's a browser method. it doesn't exist in node
+00:13 <   Guest44045> is there a node equivilant?
+00:14 < saschagehlic> functions like prompt(), alert() and confirm() are not functions that are implemented by the browser
+00:14 < saschagehlic> they are not part of the javascript language
+00:14 <       ljharb> they're implemented by the browser, and not in the language. yes.
+00:14 < saschagehlic> wait they ARE functions that are implemented by the browser
+00:14 <       ljharb> there's many ways to run node. what would "prompt" mean as a webserver? or a headless script?
+00:15 <@     isaacbw> b
+00:15 <       ljharb> Guest44045: instead of asking about a specific function, i suggest explaining what you're trying to do
+00:15 < saschagehlic> oh you already said what I said ljharb 
+00:15 < saschagehlic> i should probably shut up and go to bed.
+00:15 < saschagehlic> :D
+00:16 <   Guest44045> I'm new and am learning through CodeAcademy. Trying to use Sublime Text to write some code
+00:16 <   Guest44045> Installed Node.JS to build the code
+00:16 <   Guest44045> and now Im trying to get user input
+00:17 <       ljharb> you should be running that in a browser then, not in node
+00:17 <      jmar777> Can you count on `socket._handle.fd` being unique per connection?
+00:17 <       ljharb> codeacademy is geared towards the browser.
+00:17 <   Guest44045> any recommendations on the best workspace for the browser?
+00:18 < jesusabdulla> workspace? wat
+00:18 <   Guest44045> or ide
+00:18 <       ljharb> you can use jsfiddle.net or jsbin.com or something if thats what you mean
+00:18 <       ljharb> but also you can just load an html file in a browser
+00:18 <       ljharb> you don't need an IDE.
+00:18 <      eighty4> Guest44045: sublime is good
+00:18 <   Guest44045> im using sublime but I dont know how to get browser based stuff to work, like prompt()
+00:19 <      eighty4> Guest44045: that you open in a browser
+00:19 <       ljharb> you have to execute the JS inside a browser. which is totally separate from how you write the code.
+00:19 <   Guest44045> how would I do that?
+00:19 <      eighty4> Guest44045: also, node.js != browser javascript
+00:19 <@     isaacbw> http://fez.github.io/docs.html
+00:19 <       ljharb> Guest44045: save an HTML file. put your JS inside it.
+00:20 <   Guest44045> do you know any good tutorials?
+00:20 <      eighty4> Guest44045: that's really more of a front-end channel question
+00:22 <      silne30> I am looking to get started with unit testing my node application which also is an express and angular app.
+00:23 -!- jawsome is now known as jawsome|afk
+00:24 -!- jawsome|afk is now known as jawsome
+00:25 <        ozeas> I think you can use the same test framework for angular and express
+00:38 <@     isaacbw> any alternatives to gittip that have targets for particular goals?
+00:40 <        caitp> like issuebidder or bountysource?
+00:43 <@     isaacbw> more like I want to raise funds to hire an artist to make a logo
+00:43 <        Havvy> isaacbw:  There's a reddit you could ask.
+00:43 <@     isaacbw> I have reddit blocked
+00:43 <        Havvy> http://www.reddit.com/r/freedesign
+00:44 <        Havvy> Then unblock it and request there.
+00:44 <@     isaacbw> :P
+00:44 <@     isaacbw> okay
+00:44 <@     isaacbw> oops, I broke github pages
+00:44 <@     isaacbw> but pushing a -f commit
+00:45 <@     isaacbw> clearing my cache fixed it
+00:45 <        caitp> if you have a cheap vector app you could make one yourself
+00:45 <        caitp> not too difficult
+00:46 <@     isaacbw> http://fez.github.io/
+00:47 <@     isaacbw> I want the logo to be a monkey wearing a fez and smashing a keyboard though
+00:47 <@     isaacbw> which is beyond my abilities
+00:47 <        caitp> ah
+00:51 <@     isaacbw> can you create a gittip for an organization
+00:54 <   OliverJAsh> i'm writing integration tests for a RESTful API, which i boot as a child process from within my tests. how should i know when the API child process is ready? at the moment i've just got a timeout set. i guess i could scrape the stdout of the child process and see if it says "server started", but that feels brittle.
+00:59 <@     isaacbw> I would do that
+01:00 <@     isaacbw> you could also have a flag for your API server
+01:00 <@     isaacbw> which makes it output friendly text to consume by the parent process
+01:00 <@     isaacbw> like ready\n
+01:00 <@     isaacbw> so no 'scraping'
+01:01 <    doug65536> OliverJAsh: make it write something to stdout
+01:01 <   OliverJAsh> isaacbw: okay, thanks. still feel weird about doing this as a child process. i also need to delete the test database after the tests are finished, which means my tests are bloated with code for doing that.
+01:02 <   OliverJAsh> unless i could send a message to the child process to tell it to clean up (delete the DB)?
+01:02 -!- Leates is now known as [2]seranok
+01:02 -!- [2]seranok is now known as Leates
+01:02 <    doug65536> OliverJAsh: pass a command line parameter that asks for a "ready" indication to be written to stdout
+01:03 <   OliverJAsh> doug65536: sounds good, i'll do that i think
+01:04 <      monkers> any reason my site hosted by node is having problems with the client loading strobe media player??
+01:05 <  systemfault> Do you guys ever use accessors in your code? (Getters/Setters, ES5-style or not)
+01:05 <        s3shs> Hello, I'm using domains.  And I've just started using node canvas and my domain.active is undefined two lines later in a callback.  I've never dealt with this before.  Where do I look first?
+01:05 <  systemfault> monkers: Not sure what the server-side has to do with a flash plugin
+01:05 <      monkers> right .. kk
+01:08 -!- mode/#Node.js [+o TooTallNate] by ChanServ
+01:09 <        s3shs> Is setting/resetting domain my job or the library?
+01:14 < aslakhelleso> Is anyone else getting 503 errors on npm install?
+01:25 <      seranok> how do i get the response body as a string from this answer: http://stackoverflow.com/questions/8880741/node-js-easy-http-requests-with-gzip-deflate-compression#14739453
+01:29 <    doug65536> benjamingr: still here?
+01:29 <   benjamingr> yes
+01:29 <    doug65536> benjamingr: those profiler instructions don't work. ~/.nvm doesn't exist. is this the site for it? https://github.com/bnoordhuis/node-profiler
+01:30 <    doug65536> I'm on linux
+01:31 <   benjamingr> kind of busy - sorry
+01:31 <    doug65536> benjamingr: this is where I got stuck before
+01:31 <    doug65536> benjamingr: ok, np. thanks anyway
+01:36 < aslakhelleso> I get devDependencies installed when I run npm install --production
+01:36 < aslakhelleso> Any ideas?
+01:36 <@     isaacbw> --production isn't a documented npm flag
+01:36 <@     isaacbw> so it's basically like doing npm install
+01:37 <@     isaacbw> which, in the directory pulls devDependencies
+01:37 < aslakhelleso> isaacbw: depends what you mean by "documented": https://npmjs.org/doc/cli/npm-install.html
+01:37 < aslakhelleso> it's documented there
+01:37 <    doug65536> it is documented https://npmjs.org/doc/install.html
+01:37 <    doug65536> "By default, npm install will install all modules listed as dependencies. With the --production flag, npm will not install modules listed in devDependencies."
+01:37 <@     isaacbw> oh
+01:37 <@     isaacbw> ignore me
+01:38 < aslakhelleso> I'm pretty sure it used to work
+01:38 -!- zz_romb is now known as romb
+01:38 -!- Brocken is now known as zz_Brocken
+01:39 <       ljharb> file an issue on github
+01:39 < aslakhelleso> I'll try upgrading from node v0.10.23 to v0.10.24 first
+01:39 <   HackerPony> HELLO WORRRRRRRLD!
+01:39 < aslakhelleso> maybe it's a regression that has been fixed
+01:39 <       ljharb> oh yeah, always use the latest
+01:40 <   HackerPony> isaacbw That's not spamming, is it?
+01:40 <        Havvy> HackerPony:  It's not valuable either.
+01:40 <     porchrat> dear javascript, add larger ints
+01:41 <    doug65536> porchrat: 52 bits isn't enough for you?
+01:41 <     porchrat> doug65536,  theoretically no
+01:42 <        Havvy> porchrat:  TypedArrays.
+01:44 <     porchrat> i just don't want to do fancy math for 64bit ints especially when they almost never fill that last byte :P
+01:44 <    doug65536> porchrat: there are bigint libraries if you really need giant integers
+01:44 < aslakhelleso> I found out why nom install --production installed everything 
+01:44 < aslakhelleso> I have an npm-shrinkwrap.json that was created with nom shrinkwrap --dev 
+01:46 <    doug65536> porchrat: examples: node-bigint, big-integer, bignum
+01:47 <     porchrat> doug65536, i know, but they are jsut abstrct ways of expressing the number it doesn't really help when you just need a number
+01:48 <    doug65536> porchrat: wishing for something does not make it so
+01:48 <     porchrat> doug65536, but since i am not able to implement longs in js myself, there is not much else to do
+01:49 <     porchrat> and so i grumble
+01:49 <    doug65536> imho, having an integer range of 52 bits is generous considering the original purpose of js
+01:50 <     porchrat> doug65536, no doubt, but when you have to read a 64bit int from a buffer because thats waht the file formt spec says, you are stuck :P
+01:50 <    doug65536> porchrat: if my calculations are correct, a 100 megabit download of a file that big would take 13 years
+01:51 <     porchrat> the file is not that big, it contains a 64bit int, its not odd
+01:51 -!- rnewson|away is now known as rnewson
+01:51 <@     isaacbw> HackerPony: do you even node?
+01:51 <     porchrat> i agree that there is almost never a number that big in it, but i can't change the spec
+01:52 <     porchrat> i'm just trying to read the data
+01:52 <@     isaacbw> porchrat: you'll just have to uose a bigint library
+01:52 <@     isaacbw> or roll your own
+01:52 <   HackerPony> isaacbw I do :P whiskers75 pointed me to node, now I luff it
+01:52 <@     isaacbw> 64bits would be pretty easy to work with
+01:52 <   HackerPony> node and MongoDB
+01:53 <     porchrat> ya, i got solutions, i'm just frustrated i can't just readLong and move on
+01:53 <     porchrat> grumbling
+01:54 <     porchrat> (also i can't do bitwise stuff on anything bigger then 32 bits)
+01:55 <     porchrat> unless i am misunderstanding something
+01:55 <     porchrat> very possible
+01:55 <@     isaacbw> anyone here do NLP?
+01:56 <   HackerPony> isaacbw Naturaul Language Processing?
+01:56 -!- rnewson is now known as rnewson|away
+01:56 <@     isaacbw> yea
+01:57 <     porchrat> unless my own brain's use of english counts, no :/
+01:57 <    doug65536> porchrat: yes and no. multiplying or dividing by powers of two can emulate it, but then you start screwing around with truncating/rounding up/down and handling negative. in that case, use a bigint lib
+01:59 <       ohnode> I'm getting kind of confused about the streaming API, especially the Duplex class - I boiled it down to this https://github.com/eliasgs/duplex, what am I doing wrong?
+01:59 -!- ortuna1 is now known as ortuna
+02:01  * HackerPony   wants to learn more about NLP
+02:01 <   HackerPony> I goofed with it a long time ago
+02:01 <   HackerPony> now I am looking into the concept of making a node.js AI
+02:02 <   HackerPony> and building it on an embedded system
+02:02 <       TRUPPP> Hello =) I have a dedicated server with 8 cpu cores where i wanted to run 7 node instances and 1 redis instance. Does it make sense to assign each instance to one core?
+02:03 <      brett19> TRUPPP: I don't think it would make much of a difference in that situation.
+02:04 <   HackerPony> Does node.js work under uClibc?
+02:04 <     fruitFly> how much of connect should I learn before learning express? or could I just jump into express, you think?
+02:04 <      Sorella> HackerPony, I think there's a Coursera class about that
+02:05  * Sorella      isn't sure if it was Machine Learning or Natural Language Processing, however
+02:05 <     anthony_> fruitFly: I'd jump to express
+02:06 <   HackerPony> a class?
+02:07 <       TRUPPP> brett19, normally the os should schedule everything and organize the instances between the threads, i am just wondering if i could achieve performance gains, when each instance could be assigned to one core. so do you think i could easily initiate 8 node instances and run one redis instance alongside?
+02:07 <   HackerPony> I just wanted a yes or nuuuu answer :P
+02:07 <      Sorella> HackerPony, https://www.coursera.org/course/nlangp
+02:07 <      Sorella> Looks like they have both
+02:07 <      brett19> TRUPPP: That sounds more reasonable, assuming your not heavily CPU bound.
+02:08 <      Sorella> HackerPony, there's also this one: https://www.coursera.org/course/nlp
+02:08 <      brett19> TRUPPP: It REALLY depends on your workload, your best bet is to try out a few options and see which one is best.  It's hard to say externally.
+02:09 <      brett19> TRIPPP: Worth keeping in mind as well is that node process == cpu cores is not always the best option. Try 10,12,14 node processes for 8 cores as well.  See what performs best.
+02:12 <       TRUPPP> brett19, okay interesting advice. i read the api docs for node cluster and there they initiated as many node processes as there are cores.
+02:13 <      brett19> Yup!  I'm just saying its not always best, it really depends on what kind of work the processes are doing.
+02:13 -!- PLejeck is now known as nuck
+02:14 <       TRUPPP> brett19, its definitely not heavily cpu bound, more network bound. i just try to understand in which degree redis and node should share cores with each other, but unfurtunately i couldnt find recommendations in the internet so far :(
+02:15 <@     isaacbw> I would just let the OS do its job
+02:15 <       TRUPPP> brett19, anyway thank you for your advice, i try to find out more :) do you have any keywords i could look for?
+02:20 <       TRUPPP> isaacbw, i think i begin to understand that i see a problem which isnt there. i thought i should careful manage my cores for my node processes and dedicate a core to my redis process so that each of those processes have each own core/thread for going wild and not affecting the other processes. but it seems the os will anyway schedule the processes by workload. unfurtunately i still have to learn much more about how the os manages pro
+02:24 -!- mode/#Node.js [+o feross] by ChanServ
+02:27 <        Havvy> What do I pass to node.load(config) to make it *not* echo stuff to stdout/stderr?
+02:30 <      Sorella> Havvy, node.load?
+02:31 <        Havvy> Err sorry, npm.load
+02:31 <      Sorella> Havvy, I think that depends on the command. For example, npm.commands.list takes an additional "silent" parameter.
+02:31 <        Havvy> (var npm = require('npm');)
+02:35 -!- ghostbar_ is now known as ghostbar
+02:36 < SecretAgentX> Does someone know the name of the new alternative to Grunt? 
+02:36 <        Havvy> SecretAgentX9:  Gulp or Fez?
+02:37 < SecretAgentX> Gulp is what I'm thinking of
+02:37 < SecretAgentX> thanks
+02:37 <        Havvy> Take a look at Fez too.
+02:37 <        Havvy> Though you have to install it via github at this time. (https://fez.github.io/ )
+02:37 < SecretAgentX> Thanks I will
+02:41 < yogurt_truck> Sorella: the computational neuroscience one just started, btw
+02:44 -!- leichtge_ is now known as leichtgewicht_
+02:44 -!- mode/#Node.js [+o TooTallNate] by ChanServ
+02:50 <      Sorella> yogurt_truck, I think I've started that one before, but didn't see it through. Might do it now since I'm on break anyways
+02:51 <      Sorella> SecretAgentX9, also worth considering are Make and NPM.
+02:52 <      Sorella> SecretAgentX9, http://substack.net/task_automation_with_npm_run
+02:54 < SecretAgentX> I'll check that out too. Thanks
+03:01 <      silne30> I am looking to perform some unit tests. I come from a java/.net background and am now working with node.js, angular and express.
+03:01 <@       nexxy> Havvy, hi
+03:01 <@       nexxy> whiskers75, hey :)
+03:02 <      silne30> I have been looking online to find tuts on exactly how to break the different portions into units and what a unit should test when it comes to my client and server side code.
+03:02 <      silne30> Any pointers?
+03:02 <       aroman> what's a good library for doing arbitrary form validation?
+03:03 <      ceejbot> silne30, are you new to unit testing in general or looking for node-specific pointers?
+03:03 <@       nexxy> Havvy, thanks for the alert
+03:03 < jesusabdulla> aroman: spumko/joi perhaps? Also look for a json-schema validator, or possibly mschema. ymmv, do some research and choose the one you like the most
+03:06 <      silne30> I have done some unit testing in .NET and Java so I am not completely green. So I would say node specific/javascript specific.
+03:06 <     fruitFly> what's a rudimentary way to make a file server for my project? like a module or something?
+03:08 <        Havvy> nexxy:  Just 15 hours late. :P
+03:13 <    topwobble> Hey all, I was using a method of determining production vs. development node instances by setting environment variables in bash (export NODE_ENV=production). This isn't working well because each new ssh session into our production server doesn't see 'NODE_ENV' defined. What is your best practice for determining if you're in the production envrioment?
+03:16 <       TRUPPP> you can give node a parameter when starting the process to declare if its production or not (http://nodejs.org/docs/latest/api/process.html#process_process_argv)
+03:16 <     fruitFly> what's a rudimentary http file server I can use? a module? connect? express?
+03:19 < leichtgewich> Trying to get nodejs to run on centos is my private small hell right now...
+03:20 <      ceejbot> silne30: check out articles like this: http://igoryen.wordpress.com/2013/06/14/mocha-unit-testing-the-simplest-example-var-assert/
+03:20 <      ceejbot> The two most common modules to help with unit tests are mocha & tap.
+03:21 <      ceejbot> And you have a variety of assertion helpers to choose from.
+03:24 <        Havvy> https://stackoverflow.com/questions/21070167/call-npm-infomodulename-without-printing-result-to-stdout
+03:28 < floatingpoin> what would be causing this Cannot set property 'lastPage' of undefined
+03:28 < floatingpoin> I am using sessions http://blog.modulus.io/nodejs-and-express-sessions
+03:37 -!- gluxon is now known as Guest69281
+03:37 -!- Guest69281 is now known as gluxon
+03:39 <      seranok> how do i get the ungzipped response body from this?: http://stackoverflow.com/questions/8880741/node-js-easy-http-requests-with-gzip-deflate-compression#14739453
+03:39 <      seranok> as a string
+03:46 <       myndzi> seranok: in that example it is sent to stdout
+03:46 <       myndzi> if you want it as a variable, you'll want to bind the stream events and create it
+03:47 < floatingpoin> are memory stores required for sessions now?
+03:48 <       myndzi> floatingpoint: examine the variable you are attempting to set lastPage on and where it comes from; it doesn't hold what it should
+03:48 <      seranok> myndzi: there is no simpler way of doing it?
+03:48 <       myndzi> leichtgewicht: i assume you're dealing with an old version of python; install 2.7 into /opt and prefix necessary commands with PYTHON=/opt/python2.7/bin/python
+03:49 <       myndzi> seranok: there might be a module for the same purpose but in general it's pretty simple
+03:49 < leichtgewich> I actually deal with an old version of openssl
+03:49 <       myndzi> var resultStr = '';
+03:49 < leichtgewich> And python of course
+03:49 <      seranok> i get the picture
+03:49 <       myndzi> .on('data', function (chunk) { resultStr += chunk.toString(); }).on('end', function () { do whatever })
+03:50 <       myndzi> after the gzip pipe
+03:50 <      seranok> would it be advantageous to push the chunk to an array
+03:50 <       myndzi> leichtgewicht: no experience there
+03:50 <      seranok> and then toString it at the very end?
+03:50 < leichtgewich> myndzi: no fun ... 
+03:50 <      seranok> less memory usage?
+03:50 <       myndzi> not as far as i know, but if you want binary data that's probably best
+03:51 <       myndzi> the GC will clean up the old strings as you ignore them and string concatenation is an optimized case i think
+03:51 <       myndzi> leichtgewicht: centos is never fun :P
+03:51 <       myndzi> actually, let me rephrase. cpanel/whm make centos not fun
+03:51 < leichtgewich> myndzi: My system admin convinced me to try it ...
+03:51 <       myndzi> if you're without them then i guess it's just old
+03:52 < floatingpoin> myndzi what do you mean? are you telling me req.session.lastPage isn't a thing?
+03:52 < dman777_alte> which is better for async...using the async module directly or using the module Promises?
+03:52 <       myndzi> i seem to recall also that i changed the hashbang of a file or two in the node installation so that i didn't have to type PYTHON= every time; also i think it's path-safe so you can prepend the location of the 2.7 binary to your path in your bashrc
+03:52 <       myndzi> floatingpoint: i'm saying that req.session is undefined
+03:52 <       myndzi> that's what the error is saying, anyway
+03:53 <       myndzi> since i didn't have any code to go off of, i didn't know it was req.session ;)
+03:53 < floatingpoin> myndzi this is in my app.js: app.use(express.session({ secret: '1234567890QWERTY', store: MemStore({ reapInterval: 60000 * 10 })}));
+03:53 <       myndzi> and yes, i imagine you must have a memory store of some kind, though there's a naive normal in-memory one you can use
+03:53 <       myndzi> dman777_alter: i prefer promises because of ease of composability
+03:54 <       myndzi> if you're just doing simple stuff like executing async commands in sequence, an async library is also fine
+03:54 < dman777_alte> myndzi: thanks
+03:54 <       myndzi> floatingpoint: gimme a sec, not familiar with express sessions yet
+03:55 <       myndzi> it would help if you could paste your code
+03:55 < floatingpoin> which part
+03:55 <       myndzi> try 'new MemStore' first
+03:56 <       myndzi> MemStore is capitalized which is convention for a constructor, and you're not using 'new' which means you may be passing an invalid object as the 'store' property
+03:56 <       myndzi> as for which part, all of the express setup and the code block you're having problems with
+03:56 < floatingpoin> myndzi http://stackoverflow.com/questions/8078315/sessions-in-express-arent-working
+03:58 <       myndzi> floatingpoint: that doesn't appear to be the code you are currently using
+03:58 <       myndzi> though i see that you tried to use the accepted answer's answer
+03:58 <       myndzi> the result may be relevant
+03:59 <       myndzi> do try 'new', it's the only simple thing i can think of at the moment
+03:59 <       myndzi> past that i'd probably have to copy your code and delve into github source code
+03:59 <        Havvy> isaacs:  https://stackoverflow.com/questions/21070167/call-npm-infomodulename-without-printing-result-to-stdout
+03:59 < floatingpoin> I'm not even clear if memstore is the problem
+04:00 < floatingpoin> this tutorial doesn't even using memstore http://blog.modulus.io/nodejs-and-express-sessions
+04:00 <       myndzi> i'm not either, but you should still try to write the correct syntax :P
+04:00 -!- InezK_away is now known as InezK
+04:01 <       myndzi> always check the date on tutorials btw
+04:01 < floatingpoin> april
+04:01 <       myndzi> this one seems mostly recent, but node.js is a fairly quickly changing environment and many of its modules are too, so sometimes posts can simply be out of date and no longer relevant
+04:02 <       myndzi> you can see it states it's talking about express 3.0 so one would assume it is correct
+04:02 <       myndzi> oh
+04:02 <       myndzi> are you using the cookie parser?
+04:02 < floatingpoin> yes
+04:02 <       myndzi> yeah, paste code :P
+04:03 <@     isaacbw> everyone join the party in #fez
+04:05 < floatingpoin> myndzi http://pastebin.com/s0hWtNpw
+04:07 <       myndzi> without line numbers next time would be appreciated :P
+04:07 < dman777_alte> my node book saids this would clone a array... var functions = callbacks.slice(0). But I don't see how because it's just taking the first element of an array, right?
+04:08 <       myndzi> dman777_alter: slice creates a copy
+04:08 <       myndzi> it doesn't reference the same object
+04:09 < dman777_alte> myndzi: but doesn't slice[0] refer to just one element of the array(the first)?
+04:10 <@     isaacbw> n
+04:10 <@     isaacbw> o
+04:10 <@     isaacbw> https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice
+04:10 -!- InezK is now known as InezK_away
+04:10 < floatingpoin> where the hell is the session documentation
+04:10 <@       nexxy> Havvy, yeah sorry :( I took care of it though
+04:11 < dman777_alte> oh...i see. it's where to start the slice
+04:11 <@       nexxy> Havvy, my alerts have been broken for a while now, I'm not sure why
+04:11 < dman777_alte> thanks
+04:11 <       myndzi> floatingpoint: your code is incomplete, but i assume the rest reflects the tutorial you linked?
+04:11 <@       nexxy> Havvy, I used to get emails when I was mentioned
+04:11 < floatingpoin> myndzi the only parts I used were the parts I mentioned
+04:11 < floatingpoin> in other words, I only used the sessions bits
+04:11 <       myndzi> you don't declare 'app' :P
+04:12 <        Havvy> nexxy:  :P
+04:12 <@     isaacbw> nexxy: ooh, how did you have that set up
+04:12 < floatingpoin> app isdeclared by default
+04:12 <       myndzi> uh.. no
+04:12 <@       nexxy> isaacbw, some persl script I found on the interwebs
+04:12 <@       nexxy> isaacbw, I can gist it for you if you like
+04:12 < floatingpoin> the application worked until i began to try adding session support
+04:12 <       myndzi> 'var app = express()'
+04:12 < floatingpoin> yes
+04:12 <       myndzi> i'm just trying to make a minimal test case so i can debug locally
+04:12 <       myndzi> it helps if you do that for me :)
+04:13 <@     isaacbw> nexxy: mm, I'm probably not actually up for doing it myself
+04:13 < floatingpoin> ok
+04:13 <@       nexxy> isaacbw, you just edit some variables and load the script in irssi
+04:13 <       myndzi> anyway i've mostly got it, i have to make express happy about a view engine now
+04:13 < floatingpoin> I used the default express installer for this
+04:13 < floatingpoin> also, I use jade
+04:13 <@     isaacbw> nexxy: then sure, I would love to get a gist of it
+04:13 < floatingpoin> I am not clear if memstore is necessary
+04:13 < floatingpoin> the documentation for memstore is incomplete
+04:13 <       myndzi> paste me the entirety of your app.js
+04:13 < floatingpoin> (suprise, surprise)
+04:14 <       myndzi> all the parts that touch on 'app' and 'express'
+04:14 <       myndzi> i want to be able to paste it and run it and get the same result as you
+04:14 <      rashkov> Is there a way to save off a copy of the original request before it gets changed by various middleware? I want to proxy it via http-proxy but first it needs to go through some middleware, such as bodyparser, which breaks proxying as those middleware change the request. 
+04:15 < floatingpoin> myndzi http://pastebin.com/z11RhJFK
+04:15 <       myndzi> thanks, one moment
+04:15 < floatingpoin> https://github.com/JerrySievert/memstore
+04:17 <@     isaacbw> can irc have unicode in topics
+04:17 <@     isaacbw> can irc have unicode
+04:17 <       myndzi> yes
+04:17 <       myndzi> it's kind of up to the client to support it
+04:17 <       myndzi> floatingpoint: okay, i can reproduce, now give me a bit and i'll find out
+04:18 <@       nexxy> isaacbw, https://gist.github.com/nexxy/8379762
+04:18 <@       nexxy> isaacbw, I didn't write any of it at all
+04:18 <@       nexxy> isaacbw, but basically just stick that in ~/.irssi/scripts/
+04:18 <@       nexxy> isaacbw, edit it for your email address and w/e other things you want to change
+04:18 <@       nexxy> isaacbw, and then /load it in irssi
+04:19 <@       nexxy> isaacbw, /script load awayproxy.pl
+04:19 <@     isaacbw> cool, thanks!
+04:20 <@       nexxy> also this one might be useful to you as well
+04:20 <@       nexxy> isaacbw, https://gist.github.com/nexxy/8379774
+04:20 <        Havvy> So, nexxy, isaacbw, do either of you know the npm module's node interface well?  (a.k.a.  require('npm') )
+04:20 <@       nexxy> Havvy, fairly well?
+04:20 <@       nexxy> Havvy, as in I've read the source of it a few times
+04:20 <        Havvy> https://stackoverflow.com/questions/21070167/call-npm-infomodulename-without-printing-result-to-stdout
+04:20 <        Havvy> Think you can answer this?
+04:20 <@     isaacbw> nexxy: ooh yes, that last one would be super nice 
+04:20 <@       nexxy> isaacbw, that one sets you to away when you detach from screen, and logs all hilights
+04:21 < dman777_alte> var args = Array.prototype.slice.call(arguements); I know call can be used to append a prototype to a object...but I can't see what exactly Array.prototype.slice.call(arguements) does
+04:21 <@       nexxy> Havvy, oh I misread that question lol
+04:22 <@       nexxy> Havvy, I know next to nothing about the npm module
+04:22 <       myndzi> ahh derp
+04:22 <       myndzi> floatingpoint: the answer is actually easy :)
+04:22 <       myndzi> middleware is order dependent
+04:22 <       myndzi> you have the router before the session middleware
+04:22 <        Havvy> nexxy:  Oh, okay.
+04:22 <       myndzi> so it's being called before the session object gets created/added
+04:22 < floatingpoin> myndzi yeah, I just figured that out
+04:22 <       myndzi> put router last
+04:22 <       myndzi> lawl.
+04:23 <       myndzi> well then, time to clean up
+04:24 <@       nexxy> Havvy, you could require npm in a separate process with detached stdio
+04:24 <@       nexxy> Havvy, and then just pass what you want around via IPC
+04:24 <        Havvy> That sounds....overly complicated and gross.
+04:25 <@       nexxy> lol
+04:25 <@       nexxy> well excuse me
+04:26 <        Havvy> nexxy:  I'll consider it though.
+04:26 <       myndzi> i want mirc but with javascript scripting :)
+04:26 <@       nexxy> Havvy, just trying to help :)
+04:26 <       myndzi> i actually know exactly how i can do it but :effort:
+04:42 < floatingpoin> how do you mix variables and plaintext in jade?
+04:43 <      jglover> Hi all, I can't seem to find see, to find a way to check to see if there is something running on a specific port. Is there?
+04:44 <@      mscdex> jglover: netstat?
+04:44 <      jglover> mscdex: is that within node?
+04:44 <      jglover> mscdex: im basically trying to replicate a singleton pattern with node.js. but im a bit new
+04:44 <@      mscdex> jglover: it's a utility
+04:45 <@      mscdex> jglover: what does that have to do with singletons?
+04:49 < sinclair|wor> jglover: singletons are bad
+04:50 <@     isaacbw> I'm confused
+04:51 < sinclair|wor> isaacbw: can i help?
+04:51 <          RLa> jglover, modules are your singletons
+04:51 <@     isaacbw> probably not
+04:51 <@     isaacbw> sinclair|work: I'm confused about the connection between checking port usage and singleton patterns
+04:51 < sinclair|wor> RLa: that is pretty bad advice
+04:51 <      jglover> ok sorry
+04:51 <      jglover> im back
+04:51 <      jglover> anyways
+04:52 < sinclair|wor> isaacbw: mate, you can't see how netstat and singletons relate???? 
+04:52 <@     isaacbw> i so dum
+04:52 < sinclair|wor> heh
+04:52 <      jglover> Maybe I'm going about this wrong, but I have a module I'm working on that requires a server running on another port, so within the module I create new server on a specific port
+04:52 < sinclair|wor> RLa: modules != singletons
+04:52 <      jglover> but I only want one server to be running at a given time
+04:53 <      jglover> so I figured I could have it be a singleton class, and return an instance of the server to use whenever I require the module
+04:53 < sinclair|wor> jglover: 'require' will require once, and return a reference to that module
+04:53 < sinclair|wor> but its not a singleton
+04:53 <      jglover> sinclair|work: ah, i didn't realize that. thank you. 
+04:54 < sinclair|wor> jglover: so, when you require that module, it runs the code in that module, then on concurrent calls, it returns the cached reference
+04:54 < sinclair|wor> ok, all g
+04:54 < sinclair|wor> not a singleton tho
+04:55 <          RLa> so a class with oop crap qualifies as singleton only?
+04:55 < sinclair|wor> RLa: ....yes, go look at the singleton pattern
+04:56 <      jglover> sinclair|work: alright, I'm going to try to work this out. thanks for your explanation.
+04:56 <      jglover> and excuse me all for my erroneous seeming connection between ports and singleton, I was called almost the second after I wrote that and wasn't able to respond
+04:57 < sinclair|wor> RLa: also, OOP crap?
+04:58 <          RLa> yeah, static reference and what else it needs
+04:58 < sinclair|wor> RLa: well, you can model the same thing in JS
+04:58 -!- g_ is now known as Guest46928
+04:58 < sinclair|wor> RLa: JS supports static members 
+04:59 < sinclair|wor> var MyClass = MyClass || {}; MyClass.instance = null <-- static
+04:59 <          RLa> i liked it in c++, very easy to inherit from template that adds singleton support
+05:00 <          RLa> that's last time i used singletons
+05:00 < sinclair|wor> RLa: i tend to shy away from singletons
+05:00 <          RLa> yeah, later i needed deterministic instantiation and it sucked
+05:00 < sinclair|wor> RLa: right, so i think a better pattern is DI
+05:01 < sinclair|wor> RLa: where you instances are created upfront, and then injected into dependent classes on startup
+05:01 <          RLa> c++ also has in-function static variables, that are initialized only once
+05:02 < sinclair|wor> RLa: yeah, but when are they initialized?
+05:02 <          RLa> Stuff getStuff() { static Stuff stuff = new Stuff(); return stuff; }
+05:02 < sinclair|wor> RLa: i agree, non deterministic initialization of state is a terribad idea
+05:02 <          RLa> initialized on first call
+05:03 < sinclair|wor> RLa: when is that?
+05:03 <          RLa> i think in js you can replace the whole function on first call
+05:03 <          RLa> whenever it is
+05:03 < sinclair|wor> RLa: whenever it is "is non deterministic"
+05:03 <          RLa> i think it could be before main() executes, too
+05:03 <          RLa> yeah
+05:03 <          RLa> i remember reading some horror stories about it
+05:03 < sinclair|wor> RLa: no guarantees tho, 
+05:04 < sinclair|wor> so yeah, i just like to not use it, and have less confusion (things to remember and gotchas) later on
+05:05 < sinclair|wor> RLa: also, i have been campaigning against implicit behavior in software in recent months (its my new pet hate), and non deterministic initialization of state qualifies as implicit behaviour
+05:05 < sinclair|wor> RLa: its also very language / framework specific
+05:08 <          RLa> >> function make() { var o = { x: Math.random() }; make = function() { return o }; return make(); } make() === make()
+05:08 <         purr> RLa: (boolean) true
+05:08 <          RLa> singleton-like behaviour with function replacement
+05:08 <          RLa> have not seen this pattern used much :)
+05:08 < sinclair|wor> RLa: yeah, don't like that code
+05:09 < sinclair|wor> RLa: actually, its more to do with me not liking javascript in general :P
+05:09 <          RLa> hm, i wonder if something like that is possible with constructors
+05:09 < sinclair|wor> RLa: you hate TypeScript right?
+05:09 <          RLa> not hate, just haven't used it much
+05:10 < sinclair|wor> RLa: what i hate about JS is that its too flexibly
+05:10 < sinclair|wor> *flexible
+05:10 < sinclair|wor> RLa: some people see that as a strength
+05:10 < sinclair|wor> i see it as a problem
+05:11 -!- mode/#Node.js [+o Havvy] by ChanServ
+05:11 <          RLa> i do not see much problem :)
+05:11 <@     isaacbw> sinclair|work: flexibly is a good word
+05:11 < sinclair|wor> RLa: well, the issue is that each JS developer has their own (ways of doing things) that make sense to them, 
+05:12 < sinclair|wor> isaacbw: yeah, i was just thinking that too :)
+05:12 < sinclair|wor> isaacbw: good name for a npm module
+05:12 <          RLa> btw, my current project is literally full of non-determinism
+05:13 < sinclair|wor> RLa: any reason?
+05:13 <          RLa> not a js project tho :)
+05:13 <          RLa> because it's a prolog project
+05:14 < sinclair|wor> RLa: well, sounds like a scary thing to manage
+05:14 <          RLa> yeah, if you have thousands of lines of code, and all it does is answer "No"
+05:15 < sinclair|wor> RLa: "computer says no?"
+05:15 <          RLa> tho that's still better than infinite loop
+05:15 < sinclair|wor> https://www.youtube.com/watch?v=0n_Ty_72Qds
+05:15 <          RLa> yes, it gives answer or says "no" if it does not find any
+05:22 <@       Havvy> isaacs:  From your SO answer,  npm.view(['tennu'], true, function (err, res) { ... }) throws a typeerror:  object tennu has no method split     and npm.view('tennu', true, function (err, res) { ... }) throws a typeerror, Object true has no method indexOf
+05:23 <@      isaacs> Havvy: npm.commands.info
+05:23 <@      isaacs> Havvy: not npm.ifo
+05:24 <@       Havvy> Ah.
+05:24 <@       Havvy> (24 hours...I really shouldn't be programming since I've programmed 18 of those...)
+05:24 <@      isaacs> Havvy: once upon a time, in the time before time, npm had a repl
+05:24 <@       Havvy> That sounds scary...
+05:24 <@      isaacs> Havvy: in it, you could do `npm.$someCommand(arg, arg, arg)` and it would print the results
+05:25 <@      isaacs> Havvy: but, it just does that by translating it to npm.commands.someCommand([arg,arg,arg],cb)
+05:25 <       Oobert> fun times.
+05:28 -!- kenansulayman is now known as kenan|afk
+05:31 <@       Havvy> I just want to get this plugin working correctly and 1.0.0...then bed.
+05:35 <       Oobert> want to get my thing to alpha but binge watching Top Chef with wife.
+05:36 -!- grep_away is now known as grep_awesome
+05:37 <       Oobert> So I node community saves me again. wanted to read exif data from jpg on client side. the first exif reader I found used depercated html apis. 2nd one was written for node and works great with browserify. <3
+05:37 <       Oobert> and for got words.... So I love the node community... 
+05:38 <@     isaacbw> anyone know of a good bot for writing git commits to irc?
+05:38 <       Oobert> isaacbw: never used any but would start with githubs bot.
+05:39 <@     isaacbw> Oobert: which is that? A hook?
+05:39 <          ldk> yeah
+05:39 <       Oobert> isaacbw: the open sourced the irc bot they use internally
+05:39 <@     isaacbw> ooh
+05:39 <          ldk> oh, you mean hubot
+05:39 <          ldk> good project
+05:39 <       Oobert> ldk: yes
+05:40 <       Oobert> was looking for the link.
+05:40 <          ldk> but github has irc hooks as well
+05:40 <          ldk> that may be easier, depending what you need
+05:40 <       Oobert> isaacbw: https://github.com/github/hubot
+05:41 -!- mode/#Node.js [+o feross] by ChanServ
+05:41 <     BuSheeZy> Hubot is a chat bot, modeled after GitHub's Campfire bot, hubot. He's pretty cool.
+05:41 <     BuSheeZy> "Hubot is a chat bot, modeled after GitHub's Campfire bot, hubot. He's pretty cool."*
+05:41 <     BuSheeZy> He's pretty cool.
+05:41 <       Oobert> Yeah. it idles in a few channels I am in. 
+05:47 <@     isaacbw> isaacs: is there a way from glob or minimatch to get an array of substrings matching the various * and ** patterns
+05:53 -!- mode/#Node.js [+o Havvy[Hex]] by ChanServ
+05:57 <@     isaacbw> mark duplass just favorited my tweet :D
+05:58 <      fitnerd> I have an app that generates WMS tiles using node-mapnik.  There are concurrent requests for 8+ tiles at once by the browser, which are rendered as png.  I am hitting a wall somewhere in node where it is taking 1+ minutes to return the request to the browser.  I have added console.log at the beginning of the node request and the delay is not processing the request, it is not even *starting* the request.  It's like the request is getting stuck in
+05:58 <      fitnerd> buffer somewhere.  Node is completely idle during the delay time and there is no async going on.  Any ideas?
+05:58 <@     isaacbw> I think he just went through twitter and favorited anyone who mentioned jeff, who lives at home
+05:59 -!- r04r is now known as r04r|away
+05:59 <       Oobert> fitnerd: what os?
+05:59 <      fitnerd> Oobert: Ubuntu 12.10
+06:00 -!- generic is now known as shanse
+06:00 <       Oobert> damn... easy answer was windows has a connection limit... nothing can ever be easy can it? :)
+06:00 <      fitnerd> yeah no kidding, I have been fighting this for days :(
+06:01 <       Oobert> fitnerd: what browser?
+06:01 <      fitnerd> Oobert: Chrome and Firefox
+06:01 <       Oobert> This may be it: http://stackoverflow.com/questions/985431/max-parallel-http-connections-in-a-browser
+06:02 <       Oobert> fitnerd: note that I am guessing.
+06:02 <       Oobert> just trying to be helpful.
+06:02 <      fitnerd> Oobert: so am I ;)
+06:02 <      fitnerd> Oobert: I am not limiting connections, everything is wide open
+06:03 <      fitnerd> node is not busy processing anything.. the browser just sits at "pending" for a minute +
+06:03 <      fitnerd> then, I see my console.logs start flowing and it returns
+06:04 <      fitnerd> so something is hanging up a queue somewhere
+06:04 <       Oobert> yeah that is weird. if it was a connection limit problem it would just sit there idle
+06:04 <      fitnerd> I have watched strace output on the node process and it is just polling and waiting while it appears "hung"
+06:05 <       Oobert> fitnerd: have you checked to make sure nothing is blocking the event loop? ... hrmm.
+06:06 <      fitnerd> Oobert: as far as I can tell, there is nothing blocking.. i have logs from beginning to res.end() and it is not getting stuck in the middle
+06:06 <      fitnerd> well, SOMETHING is blocking I guess.. just can't figure out what the heck it is
+06:10 < floatingpoin> hey, if I have some fonts in a "fonts" dir in my public/ dir, shouldn't I be able to set the CSS rule for @font-face url("/fonts/somefont")?
+06:11 <        mybit> I'm making a multi server node/socketio app w/ a redis backend for the pub/sub. Is there a better way of propagating  messages between servers than using http posts ? 
+06:11 <@        Aria> floatingpoint: how's public/ served?
+06:11 <@        Aria> floatingpoint: And with that exact CSS syntax, or something more complex?
+06:12 < floatingpoin> Aria could you clarify? I can download the font in question from the fonts dir if I type the URL into my browser
+06:12 <@     isaacbw> this could be good http://feedopensource.com/
+06:12 <@        Aria> Ah, okay. So it's something that's accessible, it's not how it's served, at least not data.
+06:12 <@        Aria> floatingpoint: So, then -- is your CSS literally @font-face url(foo) ?
+06:13 <@        Aria> floatingpoint: And is the content-type of the font correct when you access it?
+06:13 < floatingpoin> Aria http://pastebin.com/W2Dv9xSn
+06:13 < floatingpoin> yes
+06:13 <@     isaacbw> is that valid css
+06:14 <@        Aria> It is.
+06:14 <@        Aria> Are you using any CSS preprocessing that would change paths?
+06:14 < floatingpoin> you can have multiple font-face rules, right?
+06:14 < floatingpoin> no
+06:14 < floatingpoin> I'm not
+06:14 <@        Aria> Cool. And no types in the src:?
+06:14 < floatingpoin> types?
+06:15 < floatingpoin> oh. typos
+06:15 <@        Aria> formats. Sorry. (Depending on the type of font)
+06:15 < floatingpoin> no, this should work
+06:15 < floatingpoin> interestingly, one of the fonts works
+06:15 < floatingpoin> but not the other two
+06:16 <@        Aria> Oho! So the difference?
+06:16 < floatingpoin> I couldn't find one
+06:17 <@        Aria> Well, the name of the font for one!
+06:17 < floatingpoin> sure, but that's it
+06:17 < floatingpoin> We're talking about the difference between Gotham-Book and Gotham-Light
+06:17 <@        Aria> Okay, so what's different about that? Are you getting requests for it in the network inspector / logs?
+06:18 < floatingpoin> that's a negative
+06:19 <@        Aria> So the browser's not requesting it. It's not node, then.
+06:19 <@        Aria> Rules match that would trigger it? 
+06:19 < floatingpoin> in fact, I just removed that font from the css declaration, and it's still displaying
+06:19 < floatingpoin> rules match?
+06:20 <@        Aria> We're getting into the point where you'd be debugging your CSS. Browsers are finicky. 
+06:20 <@        Aria> Is there a reason it knows it should load that font? Is it used? Is there a weird override in place?
+06:20 < floatingpoin> hm
+06:20 < floatingpoin> looks like it was due to a browser cache
+06:21 <       Oobert> browser cache: EVERY DAMN TIME. :)
+06:22 <@        Aria> Yup.
+06:23 < floatingpoin> wow. much annoy.
+06:23 <       Oobert> control+r all the things
+06:24 <       Oobert> sorry, control+shift+r in chrome.
+06:25 <       Oobert> think it is control+r in IE. 
+06:25 <       Oobert> aka refresh+ignore cache.
+06:26 <@        Aria> And option-command-E, refresh in Safari Mac.
+06:27 <       Oobert> chrome is pretty ok with its cache. 
+06:27 <       Oobert> IE on the other hand. It will cache anything and really hates to give up that cache.
+06:37 <      jawsome> ctrl+F5 if you have those aswell
+06:50 -!- petschm_ is now known as petschm
+06:56 -!- eyebraus_ is now known as eyebraus
+07:06 -!- InezK_away is now known as InezK
+07:18 <      fotoflo> installing the angular-ui-router generator, get stuck here (screen grab): http://cdn.frogo.tv/blog/images/2014-01-11_2117.png?height=388&width=585   what does this mean?
+07:18 <        QubeZ> hello all
+07:23 -!- grep_awesome is now known as grep_away
+07:23 -!- LulzonAway is now known as Lulzon
+07:31 -!- mode/#Node.js [+o TooTallNate] by ChanServ
+07:32 <@      mscdex> node.js rules!
+07:34 <      gildean> mscdex: that it does
+07:34 <@        Aria> Hah. That should be the motto for fez.
+07:35 <@        Aria> And on that note, good night
+07:42 -!- InezK is now known as InezK_away
+07:49 <       Inside>  am I an idiot, or is someMethod actually some sort of javascript function?
+07:49 -!- grep_away is now known as grep_awesome
+07:49 <@      mscdex> eh?
+07:50 <       Inside> I am not a smart man
+08:04 <      monkers> hello - can multiple apps listen on the same port?
+08:05 <      monkers> within the same node.js script
+08:05 <      monkers> i want to serve a website and do socket.io on 8080
+08:10 <      gildean> monkers: you can't listen on the same port no, but socket.io doesn't need a port of its own, it can use the same http-server instance you are using to serve the site
+08:10 <      monkers> ok ty
+08:11 <      gildean> monkers: var server = http.createServer(someConnectionHandler).listen(port); var io = require('socket.io').listen(server);
+08:12 <      monkers> oh
+08:12 < richardbaker> I have a vps with cents and I'm wondering how people test their node.js apps. Do they setup their setver as a private git server and push the changes to the server then test them on a staging url?
+08:12 <      monkers> cool cool
+08:13 < richardbaker> Or does everyone just use vi/vim and make the changes server side?
+08:14 <  __rockbot__> richardbaker: what kind of testing do you mean?
+08:14 <      jawsome> richardbaker: In some form of another, yes. It depends on the persons convention, environment and type of application.
+08:14 < richardbaker> adhoc testing. Like I made a change and want to see it on the browser
+08:14 <  __rockbot__> my personal recommendation would be to have a local version of your site
+08:14 <      jawsome> richardbaker: Usually you would have a dev instance for that ^
+08:15 <      gildean> richardbaker: at work we use capistrano and codeship to run unit-tests, deploy to staging and run client-side tests using a post-commit hook
+08:15 <  __rockbot__> so have an exact replica (as exact as you can get), make your changes there, see how they look, and then deploy
+08:15 <      jawsome> Either locally or on a non-production box
+08:15 <  __rockbot__> most groups have local, staging, production - 3 sets of servers 
+08:15 <  __rockbot__> richardbaker: does that answer your question?
+08:16 < richardbaker> gildean: I have a similar environment at work also and wanted to emulate it
+08:16 <      jawsome> I have an app using couch and the dev box is setup to replicate from the production box to be as realistic as possible.
+08:17 < richardbaker> I'm mainly worried about the workflow
+08:18 <      motaka2> can any one check npm install of a package called "dnode":"1:0:0"   in a project? 
+08:19 <      monkers> richardbaker - i wish i had a better way, my code is a mess and ends up in 10 different files 
+08:20 < richardbaker> I'm still confused
+08:20 < richardbaker> You can't develop node.js locally right?
+08:20 < richardbaker> So all the dev work has to be done on the server?
+08:20 <      jawsome> In most cases you can, it's dependent upon the application's requirements.
+08:20 <      jawsome> And your local environment
+08:21 <         Fusl> motaka2: do you mean dnode@1.0.0?
+08:24 <      jawsome> richardbaker: Say you have version 0.0.1 running on a server and it has a git repo. Clone that down and start it up locally, do your try-fixes until it's fixed, commit, pull on server. Like __rockbot__ detailed, this is most commonly done with a series of servers so that you don't have to poison your local environment or maintain the requirements of the production environment locally. You can get fancy and have git post-commit hooks which will ...
+08:24 <      jawsome> ... auto-pull. I'm not sure where your confusion is on this though.
+08:25 <  __rockbot__> richardbaker: I think I know where your confusion is
+08:25 <  __rockbot__> the word "server" is super confusing
+08:25 <  __rockbot__> but on your machine, you've got a server already, called localhost
+08:25 <  __rockbot__> (usually located at http://127.0.0.1)
+08:25 <  __rockbot__> when you use node, you can create a server on your own personal machine
+08:26 <  __rockbot__> it's more of an application than an actual box
+08:26 <  __rockbot__> (am I understanding you correctly?)
+08:26 <      motaka2> can anyone help me ?
+08:26 <  __rockbot__> so, for example, if you've got an Express application, it'll start up a node server
+08:26 <  __rockbot__> located at http://localhost:3000
+08:26 < richardbaker> ok, from my understanding ( and this most likely sounds dumb ), I thought you needed a VPS to develop node.js apps
+08:27 < richardbaker> but from what you are saying you can dev locally
+08:27 < richardbaker> which clears things up
+08:27 <  __rockbot__> not dumb at all, totally a reasonable assumption
+08:27 <  __rockbot__> hopefully I've helped with that a bit :-)
+08:27 <      jawsome> motaka2: Fusl attempted to. It appears that you're inquiring about dnode version 1.0.0. Can you elaborate a little bit on what you require as far as "checking"?
+08:28 <  __rockbot__> richardbaker: when you're ready to put your node application to production, you'll need either a VPS server or something similar
+08:28 <  __rockbot__> since you can't use the traditional LAMP stack
+08:28 < richardbaker> so is there a equivalent to mamp for node.js?
+08:28 <  __rockbot__> (basically you'll want a system in which you can work from the command line interface)
+08:28 <      monkers> noob question - How do i specify a different base www directory in this node-static webserver??  Looking for an explanation/method as opposed to just a syntax change... <3
+08:28 <      monkers> http://http://pastie.org/8625553
+08:28 <      monkers> http://pastie.org/8625553
+08:29 <  __rockbot__> richardbaker: sort of, but not really
+08:29 <  __rockbot__> the nice thing is that you don't actually have to have all the stuff involved in LAMP/MAMP
+08:29 <      jawsome> richardbaker: That's the cool part, you don't need a "stack". You can just install node locally and run whatever you've written. 
+08:29 <      jawsome> ^
+08:29 < richardbaker> oh wow
+08:29 < richardbaker> that's awesome
+08:29 <  __rockbot__> i.e. all you really need is node, and an environment that can run it (usually linux, but windows works too)
+08:29 <  __rockbot__> most of us do our development on OSX, since it's unix based
+08:29 <  __rockbot__> it's beautiful how easily you can get up and running :-)
+08:30 < richardbaker> Here I was testing node.js apps on my centos VPS and I could of been running it locally LOL
+08:30 <  __rockbot__> :-D
+08:30 <      relipse> any of you guys like chess? try out my first node web app: http://jkinsman.com:9999/4playerchess/#gid=8Q7E5
+08:30 <      relipse> need 1 more to play
+08:30 <  __rockbot__> save yourself some monies and start out locally ;-)
+08:31 <      monkers> hah nice
+08:34 <      jawsome> monkers: I think by base www directory, you're inferring a document root change. It appears that is loading that up based on the current working directory of the application. So, moving it to a different directory should effectively change it's document root. This could also be modified in the filename variable replacing process.cwd() with an absolute path to the document root you wish to serve files from.
+08:35 <      monkers> ah, because process.cwd is the command working directory?
+08:35 <      monkers> that makes too much sense, thanks :D
+08:38 <      monkers> relipse - it stuck on my turn, after i made a move.  wouldnt let me move again, then socket timed out. 
+08:38 <      relipse> sorry guys had to restart browser http://jkinsman.com:9999/4playerchess/#gid=8Q7E5
+08:38 <      relipse> yeah i restarted server monk
+08:38 <      relipse> join again
+08:39 <      monkers> oh ok
+08:39 <      relipse> if you have some time
+08:39 <      monkers> i dont have time to play a whole game, srry, cool stuff though :P
+08:39 <      relipse> why does it do this:  this.socket.parser.incoming = or: Cannot set property 'incoming' of null
+08:40 <      relipse> sorry guys it crashed for some reason try again if you have a little time
+08:40 <      jawsome> I did
+08:41 <         s5fs> relipse: i've got time to play
+08:41 <      relipse> quic join
+08:47 <          L8D> How do you read one char from stdin?
+08:47 <          L8D> Like getchar()
+08:49 < floatingpoin> what is the best way to post data (for logging in)?
+08:49 <          L8D> floatingpoint: use the http authentication headers
+08:55 < floatingpoin> hm. so I have a route for /login, but I'm told that /login doesn't exist when a submit button is clicked
+08:55 -!- gluxon is now known as Guest62036
+08:56 < floatingpoin> thinkg is, I'm trying to do with without any page reloads
+08:58 <      jawsome> L8D: process.stdin is a readable stream, can you not read one character and stop?
+08:58 <          L8D> jawsome: not really
+08:59 <      jawsome> floatingpoint: Do you have a POST route for /login? How are you submitting the data? If you're trying to build a SPA, you'll probably want to disable the default.
+08:59 < floatingpoin> jawsome what exactly is a "post route"
+09:00 -!- InezK_away is now known as InezK
+09:00 <      relipse> thanks guys for helping out
+09:01 <      jawsome> floatingpoint: Assuming you're using a web framework for the route, most of them have a specified verb route. i.e. app.get/app.post/app.delete
+09:01 < floatingpoin> hm
+09:01 < floatingpoin> ok
+09:01 < floatingpoin> let me try post
+09:01 < floatingpoin> I am using express
+09:01 <      jawsome> If you're submitting the value in the HTML form with method="post", it's going to make a POST request.
+09:02 < floatingpoin> cool. I didn't realize express / node made that distinction
+09:04 -!- Dr3amc0d3r is now known as Dr3amc0d3r|away
+09:05 <      jawsome> L8D: Are you wanting to read a specific character or the first character?
+09:06 <          L8D> The first character
+09:06 <          L8D> well... the next character
+09:06 <          L8D> But I'm doing it in python now...
+09:06 <      jawsome> Oh, I see what you mean. You're wanting it chunked in one-character bites.
+09:06 <          L8D> python has better access to C-level functions when working with stdin/stdout and sockets
+09:08 -!- Lulzon is now known as LulzonAway
+09:09 -!- grep_awesome is now known as grep_away
+09:22 <      relipse> hey guys, can you please try out my 4-player chess again, http://jkinsman.com:9999/4playerchess/#gid=77777 i got turn passing enabled if you take too long
+09:23 <      relipse> thanks guys 1 more to start
+09:23 <      fotoflo> http://stackoverflow.com/questions/18922511/strange-angular-version-resolving-bug-with-bower-install 
+09:23 <      fotoflo> I'm having the same problem as this when doing a fresh yeoman install of angular-ui-router
+09:23 <      fotoflo> thoughts?
+09:26 <      relipse> mgutz_: you there?
+09:26 <      relipse> you arent moving any of your pieces
+09:26 <      relipse> its not drag and drop it is click first click second
+09:26 <      relipse> you are yellow pieces
+09:27 <       mgutz_> i was clicking pawn, then sqare to the right of it
+09:27 <       mgutz_> i wasn't dragging it
+09:28 <      monkers> could someone help me unbreak my site?  I think im missing something simple but not sure what, this was working, not sure how i messed it up. :(  http://pastie.org/8625619
+09:30 <      relipse> pawns only go up, are you sure you clicked the right color
+09:30 <      relipse> jawsome: 
+09:30 <      relipse> did you see what happened
+09:30 <      relipse> you tried to take over red
+09:30 <       mgutz_> i was yellow
+09:30 <      relipse> but you were in check but didnt notice
+09:30 <       mgutz_> i was on left side
+09:30 <       mgutz_> how can i go up?
+09:30 <      relipse> no you were red mgutz
+09:30 <      relipse> let me try your css .box { width: 40%; float: left; margin: 0 20px 0 20px; font-size: 12px; }
+09:31 <       mgutz_> you guys said i was yellow :)
+09:31 <       mgutz_> no wonder!
+09:31 <      relipse> sorry i meant red 
+09:31 <      jawsome> Yeah, you should also add name coloring to match piece colors.
+09:31 <      relipse> you could probably do it in css 
+09:31 <      relipse> ok try one more time
+09:32 <      jawsome> There's no correlation on the client side as to which pieces are the client's though, is there?
+09:32 <      relipse> mguts and jawsome
+09:32 <       mxbtty> @monkers looks like the socket.io lib on line 24 isn't exporting `io` and looking for require
+09:32 <      relipse> http://jkinsman.com:9999/4playerchess/#gid=8Q7E5
+09:32 <      relipse> join up 
+09:32 <      monkers> how did i griff that up,any ideas?
+09:32 <      relipse> quick before my wife kills me
+09:32 <      monkers> am i missing a file or somethin
+09:33 <       mxbtty> something with that file. have you tried linking from a cdn to see if error changes?
+09:33 <      monkers> no, how would i find that cdn location?
+09:33 <      monkers> <script src="http://cdn.socket.io/stable/socket.io.js"></script>
+09:33 <      monkers> like so?
+09:34 <      relipse> jawsome: mgutz_ refresh the page, i impelmented your CSS
+09:34 <      jawsome> I did
+09:34 <      relipse> i dont see you in the game
+09:34 <      relipse> http://jkinsman.com:9999/4playerchess/#gid=8Q7E5 <-- new link
+09:37 <      monkers> mxbtty - that seemed to fix one error.  now i get - Uncaught TypeError: Object #<Object> has no method 'connect' rover.html:18   (var socket = io.connect('http://epsilon:9090');)
+09:37 <      monkers> has no method? @o_O@
+09:37 <       mxbtty> what is `io`? :)
+09:38 <       myndzi> i am a wizard
+09:39 <      monkers> mxbtty - im not sure, figured it was some sort of object from socket.io.js - but i got the code from the main site front page - http://socket.io/
+09:40 <      jawsome> Yeah, it is.
+09:42 <       mxbtty> sorry, I haven't played with socket.io. hard to tell what they intend you to reference
+09:42 <      monkers> oh i think im missing 
+09:42 <      monkers> hrm no.. grr
+09:44 -!- InezK is now known as InezK_away
+09:49 <          bid> hi, anyone up? 
+09:49 <      jawsome> monkers: Do you close the head tag anywhere? Also in dev-tools is io defined even after it loads? And what is the /socket.io/socket.io.js response?
+09:50 <      monkers> jawsome - no i think i screwed up my tags
+09:50 <          bid> anyone know soap client lib that wsdl is optional to use? 
+09:50 <      monkers> where should </head> be exactly? 
+09:50 <      jawsome> view source in firefox has handy syntax highlighting for errors.
+09:50 <      monkers> oh
+09:52 <      jawsome> monkers: </head> after the last </script> and add <body> after </head>
+09:53 <          bid> html 101
+09:53 <          bid> ?
+09:53 < floatingpoin> what is the difference between res.render and res.send
+09:53 <      jawsome> lol, inadvertently, yes
+09:53 <   whiskers75> HTML 101?
+09:53 <   whiskers75> This is #node.js
+09:54 <      jawsome> floatingpoint: render is for rendering templating via an engine like jade. send will just sending content.
+09:57 <         Feel> Good morning ^_^
+09:57 <          bid> GM
+09:59 < floatingpoin> ok
+09:59 <   whiskers75> Good.morning()
+09:59 < floatingpoin> how would I go about doing both a res.send and a res.render?
+10:00 < floatingpoin> specifically, I need to load a template, and update several menu items
+10:00 <   whiskers75> Then make your templates in jade or ejs or something
+10:00 <   whiskers75> and make them dynamic
+10:00 < floatingpoin> yes, I am using ejs, but I need to load something outside my parial
+10:00 <      jawsome> floatingpoint: You should either be sending output via .send or compiling the template to send your output via .render, not both.
+10:00 < floatingpoin> *partial
+10:01 < floatingpoin> hm
+10:01 <      monkers> sorry, its just that i had sockets.io working perfectly and now it's all borked >_<
+10:01 < floatingpoin> well, that's complicated, isn't it
+10:01 <      jawsome> You can pass it objects in the .render which can be used. I'm not super familiar with ejs, but in jade you can easily include other blocks from other files. Which I assume is the same for ejs.
+10:02 < floatingpoin> sorr,y I meant I'm using jade
+10:02 <   whiskers75> jade?
+10:03 <   whiskers75> then it's easy pants
+10:03 <   whiskers75> just pass it an array of menuitems
+10:03 < floatingpoin> I think I see how
+10:03 < floatingpoin> sec
+10:03 <   whiskers75> and loop over them
+10:03 <      jawsome> Yeah ^ `extends <filename`
+10:04 < floatingpoin> ok, so I am doing this in my render: res.render('partials/home', { layout: false, test: last, valid: loginValid });
+10:05 <      jawsome> This isn't the best example, but it's one from a long time ago where I implemented this: https://gist.github.com/jawsome/848555bd8f57966a1095
+10:05 < floatingpoin> how would I access loginCalid
+10:05 < floatingpoin> **loginValid
+10:05 <   whiskers75> um
+10:05 <      maletor> If I want to run a script that hits a server every 3 seconds to find if anything new is available, do I want to use the "forever" package in conjunction with setInterval?
+10:05 <      jawsome> That whole object is passed into the template.
+10:05 <   whiskers75> floatingpoint: It's passed into your template
+10:05 <   whiskers75> floatingpoint: You can use that variable from Jade and any JS
+10:06 <      maletor> Or will that leak memory?
+10:06 <      maletor> Err, hog memory.
+10:06 < floatingpoin> whiskers75 the template in question is not part of the menu
+10:07 <   whiskers75> oh
+10:07 <      jawsome> maletor: Sure, if you feel comfortable with that configuration. As long as you're clearing the interval properly.
+10:07 <   whiskers75> um wat
+10:07 <      jawsome> floatingpoint: Can you share partials/home with us?
+10:07 < floatingpoin> whiskers75 it makes sense given the architecture of the rest of the application
+10:07 < floatingpoin> sec
+10:07 <      maletor> jawsome: Come again? clearing the interval properly?
+10:07 <   whiskers75> you have 2 templates?
+10:08 < floatingpoin> I have a ton of templates
+10:08 <   whiskers75> or you have a sidebar?
+10:08 <      maletor> jawsome: https://gist.github.com/maletor/0951fbc7baed2b47db5a
+10:08 < floatingpoin> there is a main template that can contain several partial templates
+10:08 <      maletor> that should suffice. i can run that right from app.coffee
+10:09 < floatingpoin> I am using partials much like traditional views
+10:09 <   whiskers75> ohhh
+10:10 < floatingpoin> however, the menu partial is persistent
+10:10 <   whiskers75> Then make the menu partial use a 'menu' variable
+10:10 <   whiskers75> and pass that to all your renders
+10:11 <   whiskers75> like: - for val, key in menu
+10:11 < floatingpoin> I see how I could do this with some jquery dom update/replace magic, but I'd rather do it in a less hacky manner
+10:11 <   whiskers75> a(href=key) val
+10:14 < floatingpoin> I guess I'm not clear as to how I'd go about rendering more than one partial
+10:14 < floatingpoin> on a single ajax request
+10:14 < floatingpoin> rather, single ajax post
+10:15 <   whiskers75> you can do that
+10:15 <   whiskers75> `include partial`
+10:16 < floatingpoin> oh, you're suggesting I rerender the master template
+10:17 < floatingpoin> bummer.
+10:18 <   whiskers75> remember, I'm not a node expert :P
+10:18 < floatingpoin> hm
+10:18 < floatingpoin> I'll need to give this some more thought
+10:18 < floatingpoin> it'd be nice if I could send the data back in the res
+10:19 < floatingpoin> rather, it would be nice if I could render the partial and send the var back
+10:19 <   whiskers75> erm wat?
+10:19 <   whiskers75> Render the page, deliver it to the user, and?
+10:20 < floatingpoin> and send other information back to the page that would not be included in the template
+10:20 <   whiskers75> hrmmmmmmm
+10:22 < floatingpoin> I could send the data to the template with a span or something that includes the menu update, and then use jquery to update the menu
+10:22 < floatingpoin> seems hacky though
+10:22 <   whiskers75> no
+10:22 <   whiskers75> just update the menu via jade
+10:22 <   whiskers75> >_>>
+10:22 <   whiskers75> <_<
+10:22 <   whiskers75> >_>
+10:22 < floatingpoin> that's not viable in this case
+10:23 <   whiskers75> 'not viable'?
+10:23 < floatingpoin> I don't want to send more data than is necessary
+10:23 <   whiskers75> -.-
+10:23 <   whiskers75> so you don't want to send the menu update over sending the menu update in a span?
+10:23 <   whiskers75> >_>
+10:24 <   whiskers75> !npm express
+10:24 <     meow-npm> whiskers75: express - Sinatra inspired web development framework -> http://npmjs.org/package/express
+10:24 <   whiskers75> !npm jade
+10:24 <     meow-npm> whiskers75: jade - Jade template engine -> http://npmjs.org/package/jade
+10:24 <   whiskers75> Look at the jade docs, plz.
+10:24 < floatingpoin> I've already looked at the jade docs. they're terrible
+10:25 <   whiskers75> .-.
+10:25 < floatingpoin> whoever wrote them needs to hand the documentation stuff off to someone who knows how to complete things
+10:25 <   whiskers75> I've already given you multiple solutions.
+10:25 < floatingpoin> I appreciate it. however, they aren't workable
+10:26 < floatingpoin> otherwise, I'd totally use them
+10:27 -!- basile is now known as guillom
+10:36 -!- sreeix_ is now known as sreeix
+10:41 <      jawsome> maletor: Yeah, that's going to keep creating setintervals running. On each time the three seconds (or 10 in your example) is reached, you should clear the interval and then re-set it. Unless I read that wrong, I don't know coffee.
+10:42 <      jawsome> floatingpoint: For client-side dom updating, you should be using a client-side framework with client-side templating. Like angular/backbone.
+10:42 <      fotoflo> hey guys. I have a directory structure /app/node_modules/grunt-package/node_modules  that works when I use the grunt server, but i'm switching over to deployd and this structure is causing a crash when I bootstrap the application: ("cannot find module")  - - when I remove these grunt modules the crash goes away
+10:42 <      jawsome> Especially if you're writing a single-page application.
+10:42 <      fotoflo> any idea whats going on?
+10:42 < floatingpoin> jawsome you are brilliant
+10:43 < floatingpoin> thank you (seriously)
+10:43 < floatingpoin> now I remember why I'm using angular on this project
+10:43 <      jawsome> I wasn't sure if that was sarcasm. :P
+10:43 < floatingpoin> I know. that's why I needed to qualify
+10:43 <      jawsome> :D
+10:43 < floatingpoin> irc is much too angry
+10:44 < floatingpoin> anyway, yeah, super good point. problem solved
+10:44 < floatingpoin> ok
+10:44 < floatingpoin> I'm going to bed
+10:44 <      fotoflo> Good evening jawsome 
+10:44 <      standoo> hello
+10:44 <      fotoflo> hi standoo
+10:44 <      jawsome> 'morning
+10:45 <      fotoflo> jawsome: heh. where are you? 
+10:45 <      jawsome> Houston, TX, USA
+10:45 <      jawsome> ~3AM
+10:45 <      fotoflo> ah
+10:46 <      fotoflo> i /guess/ that qualifies as morning
+10:46 <      jawsome> My eyes are just as glazed as if it were morning
+10:47 <      fotoflo> gotcha
+10:47 <      fotoflo> not a morning person then
+10:47 <      fotoflo> any thoughts on this node_modules question?
+10:48 -!- Guest62036 is now known as gluxon
+10:48 <      jawsome> My childish knowledge of grunt would suggest it's loading those modules up, but encountering dependencies it cannot resolve due to the structuring.
+10:49 <      fotoflo> jawsome: err, but I'm not using grunt 
+10:49 <      fotoflo> I'm using dpd, which can't find the modules which are so obviously there (and why is it even looking for them?)
+10:50 <      jawsome> Oh, I see... re-reading, you're using it to start the app (or were), but now you're having issues.
+10:50 <      fotoflo> i used grunt to seed the app
+10:50 <      fotoflo> now I'm using deployd as the server
+10:51 <      fotoflo> and its loading these modules
+10:51 <      fotoflo> i guess if they're in the node_modules directory they get loaded automatically?
+10:52 <      fotoflo> and then if there's no module directly in that directory it reports an error that it can't find the module?
+10:52 -!- jphase is now known as jphase-zzz
+10:53 <      jawsome> That's possible. It sounds like a very weird case.
+10:54 <      jawsome> Have you ensured the grunt module(s) aren't referenced in your package.json? 
+10:55 <      jawsome> My thinking behind that isn't npm related, but rather hidden "goodies" of deployd.
+10:55 <      fotoflo> yes, i commented them out
+10:56 <      fotoflo> but even then it should be able to find them, since they're there
+10:56 <        kiuma> good morning
+10:56 <      fotoflo> good morning kiuma
+10:56 <      fotoflo> or rather, good evening
+10:58 <      jawsome> Loading up node_modules/*/node_modules/* seems dangerous and undesirable in many circumstances.
+10:58 <      jawsome> And kind of assumption powered
+10:59 <      jawsome> I hope you find someone experienced with deployed to help out
+10:59 <      fotoflo> thx
+10:59 <      jawsome> I've reached my end of night
+10:59 <      jawsome> Goodnight~
+10:59 <      fotoflo> 'night
+11:00 -!- jawsome is now known as jawsome|afk
+11:00 <        kiuma> night
+11:04 <        kiuma> I'm trying to call `./node_modules/.bin/jsdoc -c package.json` but nothing happens. The file is https://github.com/kiuma/elenajs/blob/develop/package.json and if I try to document the only /lib/Server.js file it works. It's the first time I use jsdoc. What am I doning wrong ?
+11:05 <      fotoflo> ok I'm going to bed too
+11:05 <      fotoflo> night all
+11:07 <        kiuma> night
+11:11 <        kiuma> hello, I'm looking for help on jsdoc is there anybody ?
+11:27 <      monkers> ok so.. if i want to port my project into jsfiddle.net to help get some syntax/structure and to share it; do i just move the scripts into the scripts box and html into the html box? or am i doin it wrong
+11:32 <       myndzi> https://github.com/myndzi/blackbird
+11:32 <       myndzi> thoughts?
+11:33 <       myndzi> monkers: yes. scripts go in script box, html goes in html box
+11:33 <       myndzi> if your html brings in other scripts, you'll need to add them on the left; there are a number of libraries available already
+12:14 <      slammmm> can anyone help me getting started with using twitter api on node.js
+12:15 <   whiskers75> !npm twitter
+12:15 <     meow-npm> whiskers75: twitter - Twitter API client library for node.js -> http://npmjs.org/package/twitter
+12:15 <   whiskers75> slammmm: ^
+12:21 < jesusabdulla> slammmm: It's kind of a mess tbh, do some digging on npm I don't think you want *that* package
+12:21 <   whiskers75> !npm twitter search
+12:21 <     meow-npm> whiskers75: http://npmjs.org/search?q=twitter
+12:21 <        kiuma> whiskers75, could you help me with jsdoc please ?
+12:22 <   whiskers75> kiuma: I'm not the ultimate node.js person you think I may be
+12:22 <   whiskers75> I only know some things :P
+12:22 <   whiskers75> !npm jsdoc
+12:22 <     meow-npm> whiskers75: jsdoc - An API documentation generator for JavaScript. -> http://npmjs.org/package/jsdoc
+12:23 < jesusabdulla> slammmm: look for a popular-ish fork of ntwitter
+12:23 <   whiskers75> !npm ntwitter
+12:23 <     meow-npm> whiskers75: ntwitter - Asynchronous Twitter REST/stream/search client API for node.js. -> http://npmjs.org/package/ntwitter
+12:23 < jesusabdulla> slammmm: that's what you want. Then, read through its docs. Don't use ntwitter itself though. FIND A FORK.
+12:23 <        kiuma> whiskers75, I know that, but the problem is taht my conf file desn't produce anything
+12:23 <   whiskers75> !npm ntwitter search
+12:23 <     meow-npm> whiskers75: http://npmjs.org/search?q=ntwitter
+12:24 <   whiskers75> kiuma: I have no jsdoc experience
+12:24 <      slammmm> @jesusabdullah I am going through few codes
+12:24  * whiskers75   pets meow-npm
+12:24 <      slammmm> but they doesn't seem to help much
+12:25 < jesusabdulla> slammmm: Take your time.
+12:37 -!- zz_Brocken is now known as Brocken
+12:46 <      standoo> heeloo wrld
+12:49 <@    timoxley> can anybody think of a module that actually has an optionalDependency set? the onyl one I can think of redis with hiredis, but hiredis isn't even specified as an optional dependency
+12:49 <   whiskers75> lol, why?
+12:49 <   whiskers75> !npm redis
+12:49 <     meow-npm> whiskers75: redis - Redis client library -> http://npmjs.org/package/redis
+12:50 <   whiskers75> wow, 14s lag
+12:50 <   whiskers75> The bot is very slow
+12:51 <@    timoxley> whiskers75 possible the lag is on your end, looks like the bot appeared to respond instantly for me
+12:51 < jesusabdulla> probably network whiskers75
+12:52 < jesusabdulla> The code for that thing is very likely just a format string
+12:53 -!- rnewson|away is now known as rnewson
+12:55 <   whiskers75> It's my bot, bte
+12:56 <   whiskers75> lemme update it
+12:56 <   whiskers75> with colours!
+13:02 -!- rnewson is now known as rnewson|away
+13:08 -!- lamilami_ is now known as lamilami
+13:08 -!- kenan|afk is now known as kenansulayman
+13:08 -!- Guest97940 is now known as nullbyte
+13:16 <         zomg> http://stackoverflow.com/questions/21073923/detect-if-a-keyframes-rule-exists-without-iterating-all-stylesheets
+13:16 <         zomg> FYI if anyone has any idea
+13:16 <         zomg> :P
+13:42 <       ohnode> Hi:) Can any of you help me grok the streaming API?
+13:42 <   whiskers75> Have you read the docs?
+13:44 <       ohnode> yes many times:)
+13:45 -!- burlak is now known as Guest95207
+13:45 <       ohnode> They don't seem to explain the behaviour I'm experiencing though
+13:46 <       ohnode> ...or maybe I'm just missing something:)
+13:46 <   whiskers75> streams can be evil
+13:46 -!- whiskers75 is now known as nodejs
+13:47 -!- nodejs is now known as whiskers75
+13:47 <       ohnode> Yeah apparently! It doesn't help with there being two API's:)
+13:47 -!- ServerMode/#Node.js [+o Havvy[Hex]] by leguin.freenode.net
+13:47 -!- ServerMode/#Node.js [+o konobi] by leguin.freenode.net
+13:47 -!- ServerMode/#Node.js [+o Aria] by leguin.freenode.net
+13:47 <   whiskers75> netsplit!
+13:50 -!- TehLink is now known as TheLink
+13:51 -!- nullbyte is now known as 31NAAB6O1
+13:51 -!- ServerMode/#Node.js [+o isaacbw] by leguin.freenode.net
+13:52 <       ohnode> I illustrated my problem at https://github.com/eliasgs/duplex - any help would be much appreciated:)
+13:52 <   whiskers75> yay, isaacbw is back
+14:04 -!- Havvy[Hex] is now known as Havvy
+14:12 -!- TehLink is now known as TheLink
+14:18 -!- whiskers75 is now known as windowssucks
+14:18 -!- windowssucks is now known as whiskers75
+14:18 -!- whiskers75 is now known as disconnect
+14:19 -!- disconnect is now known as whiskers75
+14:19 -!- whiskers75 is now known as codercat
+14:19 -!- codercat is now known as minetest
+14:19 -!- minetest is now known as whiskers75
+14:20 <      schofld> hello... i want to have a grunt task for starting upp multiple servers (my proxy servers) and restarting on file change. Grunt-nodemon works for one server as far as i know? or maybe it works for multiple servers?  
+14:20 <       myndzi> grunt is a local build tool as far as i know
+14:21 <       myndzi> if there's anything that spans servers it would be its own grunt plugin
+14:21 <       myndzi> you can have grunt run something you write though that like, does the network stuff
+14:21 <      schofld> myndzi: i dont have to use grunt just need a solution for starting and restarting my proxy servers 
+14:22 <       myndzi> depends on a lot of things
+14:22 <       myndzi> a message bus would be a nice way to handle it
+14:22 <       myndzi> but also pretty complex and a bit of work
+14:23 <       myndzi> what file is it that changes?
+14:24 <       myndzi> the code for the proxies?
+14:24 <      schofld> myndzi: guess i will just open 4 terminal windows and type grunt in each one... When i change anyone of the server files it  will reboot with grunt-nodemon
+14:24 <      schofld> myndzi: mostly the servers that the proxy points to 
+14:24 <       myndzi> how does one file change on four systems
+14:25 <      schofld> just want to make development easier
+14:25 <       myndzi> or rather, why is it that four systems need to react to one file changing
+14:25 <      schofld> myndzi: true they don't all have to restart 
+14:25 <       myndzi> then it's probably easiest to just leave them be :P
+14:26 <       myndzi> unless you're automatically pushing the changes too
+14:26 <       myndzi> if that's the case, then the other files will change and trigger the monitor
+14:26 <       myndzi> scp is your friend
+14:26 <      schofld> scp??
+14:27 <       myndzi> scp is a command for copying files across machines
+14:27 <       myndzi> it works almost exactly like cp except it goes over ssh
+14:27 <       myndzi> it's one way you could push out changes, anyway
+14:27 <       myndzi> and you could make a grunt task to do the push
+14:27 <       myndzi> works best with certificate authentication
+14:28 <       myndzi> otherwise you have to supply a password every time
+14:28 <      schofld> right 
+14:28 <      schofld> and i use cet auth
+14:28 <       myndzi> http://brainscraps.wikia.com/wiki/Extreme_Multitasking_with_tmux_and_PuTTY <- wikia is awful, but this covers the bits you'd need to know
+14:29 <       myndzi> ah ok
+14:29 <       myndzi> there's one missing piece possibly, which is the key agent in memory
+14:30 <       myndzi> that'll allow you to unlock the cert once and then you'll just be able to scp as if it was a local directory
+14:30 <      schofld> myndzi: where did you learn this ?
+14:31 <      schofld> i keep bumping into grunt
+14:33 -!- whiskers75 is now known as iline
+14:33 -!- iline is now known as oline
+14:33 -!- oline is now known as whiskers75
+14:35 -!- [[zzz]] is now known as [[zz]]
+14:40 <         mewm> Can I pipe more that one stream at a time to a TCP socket, lets say 2 readable file streams to a writeable socket, and then pick it up as two streams in the other end?
+14:40 -!- kenansulayman is now known as kenan|afk
+14:40 <         mewm> It just seems like, when pipe is done, the socket ends, and then I can't on the socket back to the client either
+14:41 <         mewm> thats a great nick :P
+14:46 <   whiskers75> .
+14:49 -!- Mikk36 is now known as Mikk36|off
+14:51 -!- Mikk36|off is now known as Mikk36
+14:53 -!- Mikk36 is now known as Mikk36|off
+14:55 -!- Mikk36|off is now known as Mikk36
+15:01 -!- rnewson|away is now known as rnewson
+15:03 -!- rnewson is now known as rnewson|away
+15:03 -!- r04r|away is now known as r04r
+15:13 -!- rnewson|away is now known as rnewson
+15:20 -!- Mikk36 is now known as Mikk36|off
+15:27 -!- Mikk36|off is now known as Mikk36
+15:32 <    moogblob_> newcommer question: I'm using request to poll a API. What is the most simple/straightforward way to cache the result?
+15:34 <         zomg> moogblob_: put it into a variable
+15:35 <    moogblob_> Oh, and I want it to persist thru executions - is redis or other store the only way?
+15:35 <         zomg> Yeah, or writing it into a file or something
+15:35 < tuhoojabotti> file == store
+15:36 <    moogblob_> Thanks, just wanted that on paper - so I don't over do it. Thanks :)
+15:36 <        kiuma> hello I need help with jsdoc, is there anybody who can help me please ?
+15:36 < tuhoojabotti> kiuma: Depends.
+15:36 < tuhoojabotti> I use jsdoc, but I don't consider myself a pro.
+15:37 <      klaemo_> anyone here familiar with nodejitsu's logging?
+15:37 <        kiuma> It's the first time I use jsdoc, so probably I'm doing something wrong. tuhoojabotti I suppose you can help me as well.
+15:37 < tuhoojabotti> kiuma: Just tell us what is your problem.
+15:38 <        kiuma> yes 1 second please :)
+15:39 <        kiuma> when I call `./node_modules/.bin/jsdoc package.json` nothing is produced. (https://github.com/kiuma/elenajs/blob/develop/package.json). The only documented file is lib/Server.js
+15:40 < tuhoojabotti> kiuma: Why not "jsdoc lib/*.js"
+15:41 < tuhoojabotti> kiuma: Also, did you install jsdoc with -g switch?
+15:41 -!- rnewson is now known as rnewson|away
+15:42 < tuhoojabotti> kiuma: It looks like you're trying to combine package.json and jsdoc config file?
+15:42 <   whiskers75> !npm jsdoc
+15:42 <     meow-npm> whiskers75: jsdoc - An API documentation generator for JavaScript. -> http://npmjs.org/package/jsdoc
+15:44 <        kiuma> tuhoojabotti, yes I'm tryng to combine package.json with jsdoc, it is nasty ? Ok I could try a lib/*.js but why the config doesn't work 
+15:44 < tuhoojabotti> kiuma: It's pretty nasty
+15:44 <        kiuma> ok :)
+15:45 < tuhoojabotti> I have a jsdoc.json in my repo
+15:45 < tuhoojabotti> And I use grunt to generate docs
+15:45 <        kiuma> tuhoojabotti, can you point me to it please ?
+15:45 < tuhoojabotti> kiuma: See: https://github.com/tuhoojabotti/NodePieSpy/blob/master/Gruntfile.js
+15:45 <        kiuma> grunt ?
+15:45 < tuhoojabotti> !npm grunt
+15:45 <     meow-npm> tuhoojabotti: grunt - The JavaScript Task Runner -> http://npmjs.org/package/grunt
+15:46 <        kiuma> tuhoojabotti, does grunt work with amd ?
+15:46 < tuhoojabotti> It has a lot of modules for amd.
+15:46 < tuhoojabotti> !npm grunt-amd-dist
+15:46 <     meow-npm> tuhoojabotti: grunt-amd-dist - Builder for AMD-based projects -> http://npmjs.org/package/grunt-amd-dist
+15:47 <        kiuma> wow, thank you for stopping me using jsdoc before it was too late then :) 
+15:48 < tuhoojabotti> kiuma: I use jsdoc, but I use it with Grunt, so all I have to do is say "grunt docs" and it generates them and uploads them to gh-pages branhc.
+15:48 < tuhoojabotti> branch*
+15:48 <        kiuma> pretty handy
+15:49 <        kiuma> dojo doc tool was too tied to apache & php 
+15:50 <   whiskers75> !npm express
+15:50 <     meow-npm> whiskers75: [npm] express - Sinatra inspired web development framework -> http://npmjs.org/package/express
+15:50 <   whiskers75> !npm grunt kiuma 
+15:50 <     meow-npm> kiuma: [npm] grunt - The JavaScript Task Runner -> http://npmjs.org/package/grunt
+15:51 < tuhoojabotti> whiskers75: Why is npm with red?
+15:51 <   whiskers75> Because that's the npm colour
+15:51 <   whiskers75> Have you seen the npm logo?
+15:52 -!- JmZ_ is now known as JmZ
+15:52 < tuhoojabotti> I like the hilight of the name and the link, but too much is too much.
+15:52 < tuhoojabotti> Just sayin'
+15:52 <   whiskers75> lol
+15:54 <   whiskers75> !npm express
+15:54 <     meow-npm> whiskers75: [npm] express 3.4.7 - Sinatra inspired web development framework (12 dependencies) -> http://npmjs.org/package/express
+15:54 < tuhoojabotti> 12 dependencies should be dark red
+15:55 < tuhoojabotti> Because red and blue have nice contrast
+15:56 <   whiskers75> I'll make it like this:
+15:56 <   whiskers75> 5 or less dependencies = green
+15:56 <   whiskers75> more than 5, less than 10 = yellow
+15:56 < tuhoojabotti> Yeah
+15:57 <   whiskers75> rest: red
+15:58 <   whiskers75> meh, that's too hard :P
+15:58 < tuhoojabotti> How is it too hard?
+15:58 < tuhoojabotti> Just a few ternary operations chained ;-)
+15:58 <   whiskers75> Think about it :P
+15:58 <   whiskers75> actually, it won't be...
+15:59 < tuhoojabotti> ?
+16:00 <   whiskers75> green = <5, yellow = >=7, red = >=12
+16:01 <      Sven_vB> !npm lolcats
+16:01 <     meow-npm> Sven_vB: http://npmjs.org/search?q=lolcats
+16:01 <   whiskers75> lol
+16:01 <   whiskers75> !npm express
+16:01 <     meow-npm> whiskers75: [npm] express 3.4.7 - Sinatra inspired web development framework(12 dependencies) -> http://npmjs.org/package/express
+16:01 <      Sven_vB> thanks for implementing parts of my spec! ;)
+16:01 <   whiskers75> dammit, lack of spaces
+16:02 <   whiskers75> Sven_vB: what other things besides search do you want implemented?
+16:02 <   whiskers75> !npm express Sven_vB 
+16:02 <     meow-npm> Sven_vB: [npm] express 3.4.7 - Sinatra inspired web development framework (12 dependencies) -> http://npmjs.org/package/express
+16:03 <         zomg> !npm foo
+16:03 <     meow-npm> zomg: [npm] foo 1.0.0 - A test module with no `main`, `lib`, or `dependencies` specified (0 dependencies) -> http://npmjs.org/package/foo
+16:03 <         zomg> surprise.
+16:03 <   whiskers75> lol
+16:03 <         zomg> !npm \n\n
+16:03 <     meow-npm> zomg: http://npmjs.org/search?q=\n\n
+16:03 <         zomg> hah
+16:03 <         zomg> I'm tempted to try breaking it
+16:03 <   whiskers75> go ahead
+16:04 < tuhoojabotti> I bet lot's of people try npm install foo
+16:04 <         zomg> but I'm not sure if people will appreciate the inevitable spam it will generate on the channel
+16:04 <   whiskers75> just do it
+16:05 <     meow-npm> MerlinDMC: [npm] express 3.4.7 - Sinatra inspired web development framework (12 dependencies) -> http://npmjs.org/package/express
+16:05 <   whiskers75> ha ha, queries
+16:05 <         zomg> lol
+16:05 <   whiskers75> lemme fix that.
+16:05 <    MerlinDMC> a query would be better answered in the query itself :P
+16:06 <    MerlinDMC> then zomg can beat it down silently
+16:06 <   whiskers75> I'll just block queries
+16:06 <       qt-dsa> what version of nodejs do i need for this to work, https://npmjs.org/package/node-torrent
+16:06 <   whiskers75> !npm foo
+16:06 <     meow-npm> whiskers75: [npm] foo 1.0.0 - A test module with no `main`, `lib`, or `dependencies` specified (0 dependencies) -> http://npmjs.org/package/foo
+16:06 <   whiskers75> qt-dsa: Good idea, lemme add that
+16:07 <       qt-dsa> whisker ? 
+16:07 -!- brainproxy_ is now known as brainproxy
+16:07 <       qt-dsa> i got version v0.10.24 
+16:08 <         zomg> qt-dsa: according to its package.json, 0.8 or higher
+16:08 <       qt-dsa> 0.8.12 or something like that ?
+16:08 < tuhoojabotti> whiskers75: Why block queries?
+16:09 <   whiskers75> !npm express
+16:09 <     meow-npm> whiskers75: [npm] express 3.4.7 - Sinatra inspired web development framework (requires Node.js >= 0.8.0)  -> http://npmjs.org/package/express
+16:09 <         zomg> qt-dsa: I think I would have said "0.8.12" if it required that
+16:09 <   whiskers75> !npm node-torrent qt-dsa
+16:09 <     meow-npm> qt-dsa: [npm] node-torrent 0.1.6 - Bittorrent client for node.js. (requires Node.js >= 0.4.2)  -> http://npmjs.org/package/node-torrent
+16:09 <   whiskers75> ther
+16:10 <         zomg> ah yeah I was looking at master
+16:10 <         zomg> and not the latest tag :P
+16:10 <         zomg> yeah... if it requires 0.4.2 then it's probably heavily outdated at that release version
+16:11 <   whiskers75> lol
+16:11 <   whiskers75> !npm foo
+16:11 <     meow-npm> whiskers75: [npm] foo 1.0.0 - A test module with no `main`, `lib`, or `dependencies` specified (requires Node.js >= v0.2)  -> http://npmjs.org/package/foo
+16:11 <   whiskers75> !npm npm
+16:11 <     meow-npm> whiskers75: [npm] npm 1.3.23 - A package manager for node (requires Node.js >=0.6)  -> http://npmjs.org/package/npm
+16:11 <   whiskers75> that's so meta
+16:12 < hilkolanting> Is it possible to do a not chunked httpclient post with the http module? Or should I write my own with tcp?
+16:14 < KeyboardNotF> !npm eventemitter
+16:14 <     meow-npm> KeyboardNotFound: [npm] eventemitter 0.3.3 - Nodejs implementation of EventEmitter (requires Node.js *)  -> http://npmjs.org/package/eventemitter
+16:14 <@       Havvy> whiskers75:  Nice @ colors.
+16:15 <@       Havvy> I was also thinking about adding version number.
+16:15 <      Sven_vB> !npm monochrome
+16:15 <     meow-npm> Sven_vB: http://npmjs.org/search?q=monochrome
+16:15 <      Sven_vB> !npm greyscale
+16:15 <     meow-npm> Sven_vB: http://npmjs.org/search?q=greyscale
+16:16 <   whiskers75> Havvy: you got op? :O
+16:16 <     meow-npm> whiskers75: [npm] foo 1.0.0 - A test module with no `main`, `lib`, or `dependencies` specified (requires Node.js >= v0.2)  -> http://npmjs.org/package/foo
+16:16 <   whiskers75> crap :P
+16:17 <   whiskers75> !npm foo test
+16:17 <     meow-npm> test: [npm] foo 1.0.0 - A test module with no `main`, `lib`, or `dependencies` specified (requires Node.js >= v0.2)  -> http://npmjs.org/package/foo
+16:17 <@       Havvy> whiskers75:  Yes. I'm active and I don't want events like what happened last night to happen again.
+16:18 <   whiskers75> what happened last night?
+16:18 <     meow-npm> whiskers75: [npm] foo 1.0.0 - A test module with no `main`, `lib`, or `dependencies` specified (requires Node.js >= v0.2)  -> http://npmjs.org/package/foo
+16:18 <@       Havvy> One guy posting pornographic material, and also berating a newbie.
+16:18 < hilkolanting> Never mind my question. I should have typed headers instead of header and then content-type disables chucked encoding
+16:18 <         zomg> Classy
+16:18 <@       Havvy> No ops were on. For hours.
+16:18 <         zomg> Must've been Java programmers
+16:18 <   whiskers75> wow
+16:18 <         zomg> HA HA
+16:18 <@        Aria> Oh geez.
+16:18 <@       Havvy> !npm tennu-jshelp
+16:18 <@       Havvy> !npm tennu-jshelp
+16:18 <     meow-npm> #node.js: [npm] tennu-jshelp 1.0.0 - JS Help Plugin for Tennu IRC Bot Framework -> http://npmjs.org/package/tennu-jshelp
+16:19 <   whiskers75> lol
+16:19 <   whiskers75> bug!
+16:19 <     meow-npm> whiskers75: [npm] test 0.6.0 - (Un)CommonJS test runner. -> http://npmjs.org/package/test
+16:19 <      tiblock> Hi. I use WebStorm 7.0.3 and i create file1.js and do "global.examplevar='HELLO'; include('./file2.js');", in file2.js i do "console.log(examplevar);". WebStrom says that examplevar is undefined, and i have tons of errors. But it exists and it works. How i can fix that?
+16:20 < tuhoojabotti> Don't use globals.
+16:20 <      tiblock> *not include, but require
+16:20 <      Sven_vB> tiblock, exchange global vars for a solid program architecture.
+16:20 < tuhoojabotti> Yeah
+16:20 <      tiblock> <tuhoojabotti> yes? so when i need "escapeHtml" in 5 includes, i need copy-paste that function in all files? Smart way...
+16:21 <      Sven_vB> tiblock, make an init function in the require()d module, and let the master script call that init function passing a reference to a config object or whatever you need to be shared.
+16:21 <@       Havvy> tiblock:  In file1.js, do `module.exports = {'examplevar': 'Hello'}` and in file2.js, do `require('./file2.js').examplevar`
+16:21 <   whiskers75> The bot now responds to queries!
+16:21 <   whiskers75> \o/
+16:21 < tuhoojabotti> \o
+16:21 <      tiblock> <@Havvy> so if i need escapeHtml i need do require('escapehtml.js'); in all includes?
+16:21 <      Sven_vB> tiblock, also, if you know two ways to do something and both are bad, please assume that other people might have a 3rd option or even more.
+16:21 <@       Havvy> Yes.
+16:22 <      tiblock> that's just some bug in WebStorm
+16:22 <   whiskers75> !npm eventvat
+16:22 <     meow-npm> whiskers75: [npm] eventvat 0.2.1 - Evented, in-process key/value store for Node.js and the browser -> http://npmjs.org/package/eventvat
+16:22 <      tiblock> not in node.js
+16:22 <   whiskers75> !npm WebStorm
+16:22 <     meow-npm> whiskers75: http://npmjs.org/search?q=WebStorm
+16:22 <   whiskers75> !npm webstorm
+16:22 <     meow-npm> whiskers75: http://npmjs.org/search?q=webstorm
+16:22 <      Sven_vB> tiblock, no, it it a catastrophic failure in your application design.
+16:22 < tuhoojabotti> tiblock: require('./file') is the preferred way to require stuff, no need for prefix .js
+16:22 <      Sven_vB> *it is
+16:22 <         zomg> Uogh
+16:22 <         zomg> The more and more I use Asana
+16:22 <      tiblock> <Sven_vB> why? What bad in "global"? It created for this.
+16:22 <         zomg> the more and more I HATE IT
+16:23 <         zomg> :P
+16:23 <   whiskers75> asana?
+16:23 <      tiblock> <Sven_vB> like "window" in browser
+16:23 <@       Havvy> tiblock:  It tightly couples your code together.
+16:23 <      Sven_vB> tiblock, >>What bad in "global"? It created for this.<< can you give some references for that claim?
+16:23 < tuhoojabotti> tiblock: http://www.ee.columbia.edu/~marios/matlab/Programming%20Patterns%20Think%20Globally,%20Act%20Locally.pdf
+16:23 <         zomg> whiskers75: project management/organisation tool
+16:23 <      tiblock> <Sven_vB> its called "global"
+16:23 <         zomg> whiskers75: or as I like to call it, a tool to make long lists
+16:24 <   whiskers75> !npm asans
+16:24 <     meow-npm> whiskers75: http://npmjs.org/search?q=asans
+16:24 <      tiblock> okay, nvm guys, i will write bugreport to webstorm
+16:24 <@       Havvy> tiblock:  Can you not put angle brackets around names?
+16:24 <   whiskers75> !npm asana
+16:24 <     meow-npm> whiskers75: http://npmjs.org/search?q=asana
+16:24 <      tiblock> Havvy, that's mIRC
+16:24 <      Sven_vB> tiblock, if you prefer to stay on that level of knowledge, please don't expect us to help you.
+16:24 <       qt-dsa> !npm peerflix
+16:24 <     meow-npm> qt-dsa: [npm] peerflix 0.1.5 - a streaming torrent client. it requires node.js to run. -> http://npmjs.org/package/peerflix
+16:25 <@       Havvy> tiblock:  It makes it look like you are quoting the person, instead of sending a message to them.
+16:25 <      tiblock> Sven_vB, i asked if somebody knows how to fix WebStorm, not to fix my code because of WebStorm bug
+16:25 <       qt-dsa> what version of nodejs peerflix needs ?
+16:25 <       qt-dsa> 0.1.5 ?
+16:25 <   whiskers75> The peerflix maintainer didn't include one.
+16:26 < tuhoojabotti> tiblock: For programmers it's really hard to ignore this kind of thing that many people think is bad practice. It's not that easy.
+16:26 < tuhoojabotti> tiblock: So don't get offended.
+16:26 <@        Aria> tiblock: Since WebStorm's not open source, there's no much one can do about fixing it short of reporting the bug and hoping they fix it.
+16:26 <      Sven_vB> tiblock, ok, good luck bugreporting that to the WebStorm devs.
+16:26 <       qt-dsa> great now nvm: install v0.4.2 failed!
+16:26 <      tiblock> thank you all
+16:26 <@       Havvy> tiblock:  Using global variables makes your application harder to maintain and understand. It's usage destroys value, and as such, most developers do not touch it.
+16:26 <       qt-dsa> bs 
+16:27 <         zomg> qt-dsa: if you're trying to get the node-torrent thing working, you could try just installing the dev version (master branch) and see if that works
+16:27 <         zomg> since at least according to the packagejson it should work with a recent node version
+16:27 <@        Aria> tiblock: That said, that variable 'is' undefined from the point of view of the logging file, because I don't think webstorm can predict which execution path your code takes -- I don't think it knows that the other file is the entry point.
+16:28 <   whiskers75> !npm node-torrent qt-dsa 
+16:28 <     meow-npm> qt-dsa: [npm] node-torrent 0.1.6 - Bittorrent client for node.js. (requires Node.js >= 0.4.2)  -> http://npmjs.org/package/node-torrent
+16:28 <       qt-dsa> zomg im not sure how to do that :( im following guides all over
+16:28 <   whiskers75> qt-dsa: >= means 'greater than or equal to'
+16:28 <       qt-dsa> im right now installing 0.8.0 
+16:28 <@        Aria> tiblock: It might have a way to hint that, but it's exposing the fact that your application is coupled in ways that it can't figure out -- and that's why globals are bad. They introduce coupling that's not explict, not well managed. It's a heap of stuff that has to be organized just right.
+16:28 <@       Havvy> (And is very hard to get just right.)
+16:29 <@        Aria> (Yeah, because there's no easy way to reason about it without ALL the context.)
+16:29 <@        Aria> (So the complexity of thinking about it grows with the number of things that use it times the number of paths that can be executed to get to any point.)
+16:30 <      Sven_vB> sounds a bit like tiblock could be a maintainance programmer hired to "fix" some job security code after the author had gone.
+16:30 <       qt-dsa> openSSL why do we need it ?
+16:30 <@        Aria> qt-dsa: To do SSL.
+16:30 <   whiskers75> lol
+16:30 <@        Aria> qt-dsa: (and crypto in general)
+16:30 <   whiskers75> !npm ssl
+16:30 <     meow-npm> whiskers75: [npm] ssl 1.0.0 - Verification of SSL certificates -> http://npmjs.org/package/ssl
+16:30 <      tiblock> look, webstorm have lib specialy for that http://tau.rghost.ru/51595373/image.png and its not working. Its can't be not a bug.
+16:31 <@        Aria> tiblock: I'm not sure that does that. What's the node.js globals library do?
+16:31 <      Sven_vB> tiblock, it probably is a bug. report it to WebStorm. we can't fix it.
+16:31 <@        Aria> tiblock: I'd expect it just to make sure your app knows that 'globals', 'require', 'module' and 'process' are treated as defined without explicit definitions.
+16:31 <      tiblock> Aria, uhm... Then what library "global" can do if not "global" variables?
+16:32 <      tiblock> okay...
+16:32 <@        Aria> tiblock: Yes, but what about globals? ;-)
+16:32 <       qt-dsa> is there a torrent streaming client based on the latest nodejs ?
+16:32 <   whiskers75> !npm global
+16:32 <     meow-npm> whiskers75: [npm] global 2.0.7 - Require global variables -> http://npmjs.org/package/global
+16:32 <@       Havvy> qt-dsa:  Latest stable or latest dev?
+16:32 <       qt-dsa> stable 
+16:32 <@        Aria> It won't add a new execution path tracer, so WebStorm is going to have to make some really broad assumptions about your code to treat that variable as defined. 
+16:32 <   whiskers75> !npm torrent search
+16:32 <     meow-npm> whiskers75: Package not found. http://npmjs.org/search?q=torrent
+16:33 <      tiblock> oh, i forgot to say main thing - in WebStorm 4 that was working, so i upgraded to 7 and now its broken.
+16:33 <      tiblock> just for the information
+16:33 <      tiblock> that this is bug
+16:33 <       qt-dsa> jesus christ 8.0 taking ages to install 
+16:33 <@        Aria> tiblock: They may have just added more strict checking in 7. WebStorm has changed its javascript support a lot lately.
+16:33 <@        Aria> tiblock: (WebStorm 4 didn
+16:33 <@        Aria> t try to understand your code much)
+16:34 <@        Aria> (7 is surprisingly deep analysis, but Javascript's runtime and syntax don't provide all the hints it would need to be equivalent to Java without a ton of information added about how your app is structured)
+16:34 <      tiblock> Aria, what i do is global.escapeHtml = function(str){ ... }, then i do in 5 includes "message = escapeHtml(msg)"
+16:34 <       qt-dsa> does nodejs have binary static builds ? i really hate running this every time i  need to install another version of node
+16:34 <@        Aria> (Javascript's just a much, much more dynamic language.)
+16:35 <      Sven_vB> qt-dsa, for ubuntu there's a PPA
+16:35 <       qt-dsa> yes but it includes latest only not the other versions 
+16:35 <@        Aria> tiblock: Oh dear. That's exactly that kind of coupling that's so painful -- for that to work, one has to run the first bit first -- otherwise the other module won't work.
+16:35 <@        Aria> tiblock: Which means that those files are now 'temporally coupled' -- they're order-dependent, or execution-time dependent.
+16:36 <@        Aria> tiblock: The 'right' answer in node for that is to move escapeHtml into a module -- module.exports = function (str) { ... }; then in the places that need it, var escapeHtml = require('escapeHtml'); message = escapeHtml(msg)
+16:37 <      tiblock> Aria, do every "require" load whole file into memory? Or node.js have cache-system for that?
+16:37 <@        Aria> tiblock: It's cached -- each is loaded just once.
+16:38 <      tiblock> Aria, okay, thank you. But anyway i will write bugreport
+16:38 <@        Aria> tiblock: Good luck -- I'm not positive it's a bug, but explaining all the context is gonna be key for figuring it out.
+16:39 <      Sven_vB> tiblock, once you decided to go the route of good program design, come back any time for help.
+16:40 <@        Aria> Sven_vB, that's really not needed -- globals aren't always the wrong answer. Just usually. Might as well explain why. Let's keep this place welcoming. 
+16:43 <      Sven_vB> Aria, it's not how he uses them, it's how he defended the usage. but might have been a lanuage tone problem. maybe in english his sentence with "Smart way..." wasn't as rude as it would have been in my locale.
+16:43  * Aria         nods. Indeed, I didn't read any. 
+16:43 <@        Aria> Having worked with webstorm users at work, that kind of thinking, too, tends to make sense -- it encourages a certain style that seems to make sense.
+16:44 <@        Aria> Kind of non-linear thinking that makes more sense in 4-or-5-year-old web javascript than highly structured, modular, modern node.
+16:47 <      Sven_vB> even back then we were able to at least make our own namespace inside the global, instead of putting everything there directly.
+16:48 <      Sven_vB> like var NS = window.COM_DOMAIN = {}; NS.escapeHtml = ...
+16:50 <      Sven_vB> probably it would even have worked to just supply the master module's "globals" var to the init function of the required modules.
+16:50 <@        Aria> Yep. But the common practices are more varied than that.
+16:50 <@        Aria> So much legacy.
+16:50 <@        Aria> So we help people make good choices and explain why, eh?
+16:51 <       qt-dsa> is this some type of bug apt-get autoremove npm* --purge -y , wants to remove other tools elementary-desktop* etc
+16:51 <      Sven_vB> yeah. IT. probably the only civil industry where legacy is not a thing to be proud of.
+16:51 <@        Aria> We've all been noobs once. I've certainly made my boneheaded design decisions.
+16:51 <@        Aria> Hehe.
+16:52 <@        Aria> qt-dsa: Bug in what? What packages does that match?
+16:52 <@       Havvy> What do I put at the top of a module to make it self-executable?
+16:52 <@        Aria> Havvy: In unix? #!/usr/bin/env node
+16:52 <       qt-dsa> Aria, npm 
+16:52 <@       Havvy> Aria:  Yes.
+16:52 <@        Aria> qt-dsa: Why the star, then?
+16:52 <      Sven_vB> qt-dsa, make sure the * is not interpreted by your shell. then again, apt might include packages that had been marked for removal earlier.
+16:52 <@        Aria> Oh, true. I forget apt caches those instructions.
+16:53 <      Sven_vB> it's one of the reasons why i prefer aptitude.
+16:53 <       qt-dsa> it removed everything included with elementary-desktop :O
+16:54 <       qt-dsa> fixing it by reinstalling everything 
+16:54 -!- execut3 is now known as shesek
+16:57 <        Janos> hello, i hope npm questions are allowed, trying to install npm in debian here, if i run the install script it decides to it's prefix is /usr which could make sense since node is installed in /usr to, but since i'm installing npm myself i want it in /usr/local, so i do 'npm_config_prefix=/usr/local bash install.sh' and now it correctly says prefix=/usr/local and everything is cool, but after installed i do npm config get prefix and it returns /usr
+17:01 <@        Aria> Janos: Yeah, you have to save that npm config for the installed copy to use.
+17:01 <@        Aria> How'd you install node that you didn't get npm with it?
+17:02 <@        Aria> It's bundled.
+17:02 <@        Aria> (To use /usr/local, you also will need to set environment to handle the different library path -- it's probably much more you want to have node and npm installed together)
+17:04 <        spion> tiblock, why do you want escapeHtml in many files by the way?
+17:04 <        Janos> Aria, well in debian testing there are two packages, one for node and the other for npm, i have installed the backported version of node from testing to stable, but there is no backport of the npm package yet, so i'm installing npm by hand which is not big deal since most npm packages should go to /usr/local anyway since they are not "system" packages
+17:05 <      tiblock> spion, different files sends messages to clients
+17:05 <@        Aria> Oh fun. So you're mixing versions and configurations. Your mileage is definitely going to vary.
+17:06 <        Janos> you mean there is a specific version of npm for each specific version of node ?
+17:08 <        Janos> anyway back to the question how do i tell npm to remember where it was installed ? after installation it's prefix points to /usr and it's globalconfig point to /usr/etc/npmrc
+17:09 -!- jawsome|afk is now known as jawsome
+17:09 <        spion> tiblock, how many different files anyway?
+17:09 <@        Aria> Yep. It looks in the same structure node is in.
+17:09 <      tiblock> spion, 8
+17:10 <      tiblock> spion, i have huge app that i developing over a year
+17:10 <        spion> so is it really a problem to write `var escapeHtml = require('./escapeHtml');` at the top of each?
+17:10 <@        Aria> Janos: So you're going to have to configure npm to install elsewhere; and then you're going to have to configure node to look in a non-native location for libraries, too. 
+17:11 -!- po10_ is now known as po10
+17:11 <      tiblock> spion, its not only 1 function. There alot variables. I used WebStorm 4, and it showed 0 erros. Now i updated to 7.0.3 and it shows errors.
+17:11 <@        Aria> I think it's smart to treat node+npm as a single thing these days -- either all system installed or all user-installed. Mixing is possible, certainly, but a lot of configuration.
+17:12 <@        Aria> tiblock: Yup. Webstorm 6 and 7 added a LOT more deep looking at your code. the errors aren't new, it can just see them now.
+17:12 <@        Aria> tiblock: You may be able to get away with some jshints to 'declare' your global use. Try /*global esapeHtml:false*/ at the top of your file.
+17:13 <@        Aria> er.. pretend I spelled escape right.
+17:14 <      tiblock> Aria, is that jshint shows this? When i tryed migrate from windows to linux i used editor with jshint and jslint, they can't do errors check like WebStorm does.
+17:14 <        spion> tiblock, okay. but do consider switching to require. you're putting all things in one global namespace, you're likely to soon run into trouble.
+17:14 <      tiblock> Aria, i think its WebStorm feature
+17:14 <@        Aria> jshint certainly does look for access to undeclared variables.
+17:15 <@        Aria> (though in jshint 2, it's a configuration, so who the hell knows depending on what boxes you've checked in your IDE)
+17:15 <      tiblock> spion, i develop app for 1+ year, no problem, it working great
+17:15 <        Janos> Aria, i already installed told npm to install elsewhere and it did, it's just does not remember for some reason, and as for node i'm pretty sure debian node comes with /usr/local/lib/node_modules included in the path
+17:15 <@        Aria> Janos: oh nice. So not too much configuration. But yeah, you just need an npmrc.
+17:15 <        spion> tiblock, when you declare a new name, how can you tell if its available? :)
+17:16 <      tiblock> spion, what you mean? If it allredy used, then WebStrom will say that.
+17:17 <@        Aria> (Try the jshint. Seriously.)
+17:17 <        spion> tiblock, you mean it will warn you if you paste a line containing `global.alreadyUsed = function ...` ?
+17:17 <        Janos> Aria, yeah if i use .npmrc in my home with prefix = /usr/local everything is great, but i would like for this to be system wide and npm needs to know where it's prefix is in order to know where it's system wide npmrc is, but it thinks it's prefix is /usr even if i told it to install in /usr/local and it did installed in /usr/local :P
+17:17 <      tiblock> spion, yes. It do it for local variables.
+17:18 <      tiblock> spion, it says "reuse of local variable" if you do a=1; a=2
+17:18 <@        Aria> Janos: Yup. Because node is in /usr.
+17:18 <@        Aria> Janos: So either edit npm (gah!) or make an npmrc where it's looking ;-)
+17:18 <@        Aria> Janos: Or always use your home config.
+17:18 <        spion> you mean if you do var a = 1; var a = 2;
+17:18 <      tiblock> spion, so it may say "reuse of global variable"
+17:18 <        spion> no, it wont say that
+17:18 <        spion> because it will think you're re-assigning the global
+17:18 <        spion> and thats fine in JS
+17:19 <@        Aria> Janos: There's a fallback npmrc that's installed with npm
+17:19 <@        Aria> Janos: /path/to/npm/npmrc
+17:19 <      tiblock> spion, uhm... Yes, you right. But just don't do variables that can allredy exists.
+17:20 <        Janos> Aria, it does not exists, but let me see if it honors it once created
+17:21 <        spion> tiblock, you have to keep them all on your mind every time you make a new one - so the more you add, the harder it gets :/
+17:21 <      tiblock> spion, i have global "rooms" for keep chat rooms there, i have "users" for users, and i have other things that my chat supports.
+17:21 <      tiblock> spion, no no no, i dont do them all the time. Only one that nees to all modules.
+17:22 <        spion> also if you have 2 projects and want to get some from one and put them in the other, you'll have to check them all
+17:22 <        spion> but yes, do try the jshint thing :)
+17:22 <        spion> i was just trying to explain how you can run into problems with globals
+17:22 <      tiblock> spion, i writed to webstorm about bug and will wait answer
+17:23 <        Janos> Aria, yay it works, sweet, i guess the npm installer forgot to create it for some reason
+17:23 <      tiblock> spion, ofcourse you will have problems if you do global variable for every variable. I do only that need for all modules. 
+17:23 <        Janos> Aria, once the prefix is set, everything else falls in place as expected, like globalconfig and globalignorefile etc
+17:24 <      tiblock> spion, BTW i have alot "global.module = require('module')", i didn't know that node.js have cache for that. So this i will re-do.
+17:25 <      tiblock> but i need to test that to be sure
+17:35 <@        Aria> Hehe. Surprise! 
+17:35 <@        Aria> It is non-obvious at first glance. But the easy test is just put a counter in a module. See what it returns.
+17:35 <@        Aria> var i = 1;module.exports = 
+17:35 <@        Aria> er.
+17:36 <@        Aria> var i; if (typeof i == 'undefined') i = 0; i++; module.exports = i;
+17:36 <@        Aria> require that twice and you'll get 1 every time.
+17:40 -!- grep_away is now known as grep_awesome
+17:47 <      tiblock> Great. Updated packages in WebStorm now i have 50 times more errors than it was. And now they even more awesome. unresolved socket.uid, socket.room, and alot other variables from socket.io sockets. I hate my life.
+17:48 <        spion> yeah, another reason to avoid globals is to avoid doing something in a way that nobody else is doing it
+17:48 <        spion> because its likely that tools/IDEs will not support it
+17:48 <        spion> or will support it badly
+17:48 <      tiblock> but it was working in 4. I did it in 4.
+17:49 <        spion> likely they changed something but didn't test for your case because they didn't think users were doing things that way
+17:50 <@        Aria> It works in 7 too.
+17:50 <@        Aria> The code hasn't changed
+17:50 <@        Aria> It just reports more things it can't detect about your code.
+17:50 <@        Aria> 4 didn't check.
+17:50 <@        Aria> IT didn't work more. It just didn't look
+17:50 <@        Aria> It's not a syntax error. It's not a hard stop. You can continue. It's just gonna look at you funny.
+17:51 <@        Aria> "You're gonna keep drivin'? Okay... but I'm not sure if the bridge is there or not."
+17:51 <        spion> i assume they changed the default assumption for files from global-js to CommonJS
+17:51 <@        Aria> They added jshint among other things.
+17:51 <        spion> isn't jshint optional?
+17:51 <@        Aria> There's more different than alike in its analysis between 4 and 7
+17:51 <        spion> they have their own linter thingy
+17:51 <@        Aria> Yeah, but it's on by default.
+17:51 <        spion> ah
+17:51 <      tiblock> I have idea. I will delete .idea folder, maybe it can't work with 7
+17:53 <@        Aria> I still suspect it's fine, it's just telling you something new about your code that you didn't know before.
+17:55 <        spion> tiblock, also its not obvious to the IDE if the variable is, infact, available. What if you include thisfile.js before theFileThatDefinesGlobalDotEscapeHtml.js ?
+17:55 <        spion> :)
+17:56 <        spion> then it wont be defined
+17:56 <        spion> thats another trouble with globals, you have to manage the order of your requires manually
+17:57 <      tiblock> spion, no, i showed test. I did that test, it says uresolbed
+17:57 <      tiblock> spion, global.a = 1; require('./z.js');
+17:58 <        spion> but in z.js it can't assume that you always define global.a before requiring it
+17:58 <        spion> a module should be able to work stand-alone.
+17:59 <        spion> (or if it can't, define all the things it needs by requiring them)
+17:59 <        spion> someone else reading z.js will wonder wait, where did `a` come from now?
+18:00 <        spion> thats yet another trouble with globals, it makes it really hard for others to understand your code
+18:00 <        spion> because they have no guidance where to find the things you're using
+18:03 <        spion> (e.g. what if another module requires z.js and does it before global.a is defined?)
+18:03 <        spion> so you're back to managing dependency order manually
+18:04 <@        Aria> Yeah. Especially with IIFEs that rename the global object.
+18:04 <@        Aria> Makes reading REALLY hard.
+18:06 -!- mode/#Node.js [+o piscisaureus] by ChanServ
+18:13 <        Janos> Aria, i have another question, not sure if it's off topic now, do you know if npm changes the globally installed module files ownership ? my global module repo is at /usr/local/lib/node_modules and permissions for that folder are root:staff 2775, since my user is part of the staff group, i can create things inside that directory and when i do, since the g+s bit is set the group is always staff on whatever i create under that directory, but when i install w
+18:13 <        Janos> ith npm my user's main group is set on the files
+18:13 <@        Aria> Certainly not offtopic, but I don't know offhand.
+18:14 <@        Aria> Since you're installing as your user, and it's g+s, I wouldn't think you'd have the privilege to change that.
+18:16 <        Janos> well g+s means it will be created with groud=staff by default, but does not mean i can't do a chgrp later and since i have +w on that directory, i can do it, so only thing i can think off is npm doing a chown/chgr after install
+18:16 <@        Aria> Oh, right. +w controls it for group.
+18:18 <        Janos> also if i do `sudo npm -g install <package>` instead, i get user=nobody group=mymaingroup, so no staff group even with sudo, this is just me trying to understand npm, not really a problem
+18:19 < tuhoojabotti> http://tuhoojabotti.com/r/prsc/node-clusters.png
+18:23 -!- grep_awesome is now known as grep_away
+18:26 <@        Aria> yeah, at least as root, npm works as nobody as much as it can
+18:26 <@        Aria> I'm not sure of the rest.
+18:27 <      Dramors> Hello, I'm looking into creating a function that logs to a file in my app and I found this http://stackoverflow.com/questions/3459476/how-to-append-to-a-file-in-node
+18:27 <      Dramors> The question is, should I use the answer the questiner provides or the accepted one?
+18:27 <      Dramors> And why?
+18:27 <@        Aria> Interesting, tuhoojabotti 
+18:27 < tuhoojabotti> Aria: https://github.com/tuhoojabotti/NodePieSpy
+18:28 <     ghostbar> Can I do something like function SomeThing = function something () { };" ??
+18:28 <@        Aria> Dramors: They do different things. appendFile is asynchronous, and multiple calls aren't neccessarily in order I don't think (I'd have to check the details); the stream version is definitely in order, and only opens the file once.
+18:28 <      Warpten> ghostbar, yes
+18:28 <@        Aria> ghostbar: var SomeThing = function something() {}
+18:28 <      Warpten> err, var yes
+18:28 <        Janos> i'm just trying to figure out if i can tell npm: "-g means always set group=staff and set permissions g+rwX", that way everybody in the staff group could install/uninstall globally without needing sudo
+18:28 <     ghostbar> Aria: that's what I thought. Thanks :)
+18:28 <      Dramors> Aria: Thanks for the clarification
+18:28 <@        Aria> ghostbar: then you can call SomeThing(args)
+18:29 <     ghostbar> and something(args)
+18:29 <@        Aria> ghostbar: Only inside the function. When you use a function as an expression, its name is only available INSIDE the function.
+18:30 <     ghostbar> What about prototypes?
+18:30 <@        Aria> Janos: Wow, I'm really not sure. I realized that I rely on the bsd, not sysv behavior here.
+18:30 <     ghostbar> Module.prototype.SomeThing = Module.prototype.something = function () {}  ?? Works?
+18:30 <@        Aria> Janos: So I end up as installinguser/admin, but I'm on a BSD.
+18:30 <      tiblock> Uhm... I created new project in WebStorm 7.0.3, it created example app automatically and it now shows errors  http://plasmon.rghost.ru/51598862/image.png Is that mean WebStorm have huge bug or its but in my system and time to reinstall windows?
+18:31 <      tiblock> or maybe reinstall webstorm
+18:31 <@        Aria> ghostbar: Yep, that makes two aliases for the same function
+18:31 <     ghostbar> Awesome :)
+18:31 <      Warpten> (function foo(){})() also works
+18:31 <      Warpten> foo is accessible later on
+18:31 <      tiblock> if somebody have WebStorm 7.0.3 please try create new project and look will it show same errors or it will work?
+18:31 <      Dramors> tiblock: The latest update to WS seems to have caused this
+18:31 < statusfailed> I'm using the "ws" websocket library. What's the best way to make sure I never try to send to a closed connection? Should I just check open/closed before sending? 
+18:31 <      Dramors> tiblock: I also have the issue
+18:31 <   whiskers75> !npm ws
+18:31 <     meow-npm> whiskers75: [npm] ws 0.4.31 - simple to use, blazing fast and thoroughly tested websocket client, server and console for node.js, up-to-date against RFC-6455 (requires Node.js >=0.4.0)  -> http://npmjs.org/package/ws
+18:31 <      tiblock> Dramors, okay ;_;
+18:32 <@        Aria> tiblock: I can't think of a credible hypothesis that would make Windows a suspect; Heck, I think WebStorm is just complaining in a silly way right there.
+18:32 <   andrewaclt> tiblock, It looks like it's not finding the express sources
+18:32 <      Dramors> Windows is not the suspect
+18:32 <      Dramors> I'm on Ubuntu
+18:32 <   whiskers75> ubuntu ftw
+18:32 <@        Aria> Or can't inspect what the express() function returns without running it, and doesn't know if it's safe to do so.
+18:33 <   andrewaclt> Do you have express in your node_modules?
+18:33 <@        Aria> This is the problem of trying to do deep inspection on a language that is so low on type information.
+18:33 <      Dramors> There was something relevant in the update changelog actually
+18:33 <      Dramors> But I didn't pay much attention to it
+18:33 < statusfailed> whiskers75: oh, now I see "Error handling best practices", thanks ^^
+18:33 <   whiskers75> lol
+18:33 <   andrewaclt> tiblock, Dramors I do not have that issue on WebStorm 7.0.3
+18:34 < statusfailed> whiskers75: I was confused for a while there :D
+18:34 <   andrewaclt> tiblock, Dramors wait I lied, I do
+18:34 <   whiskers75> lol
+18:34 <      Dramors> I'll go check their bug tracker
+18:34 <      Dramors> see if there's anything about it
+18:34 <      tiblock> andrewaclt, Dramors so looks like we can ignore that errors. I have 53 of it in my project
+18:35 <        Janos> Aria, yeah, that works, but i was thinking how flexible and nice it would be to have admins that don't run things as root, again this is all nice to have, not really a problem
+18:35 <   andrewaclt> tiblock, Dramors yeah I never noticed it and the code works fine :)
+18:35 <      Dramors> Same here
+18:36 <      tiblock> same for me. Works, but shows errors
+18:36 <      Dramors> andrewaclt tiblock http://youtrack.jetbrains.com/issues/WEB help me look
+18:36 <@        Aria> Janos: Yeah, I run that way, but with the BSD behavior.
+18:37 <   whiskers75> !npm sandbox
+18:37 <     meow-npm> whiskers75: [npm] sandbox 0.8.3 - A nifty javascript sandbox for node.js -> http://npmjs.org/package/sandbox
+18:38 <   andrewaclt> tiblock, Dramors oh I remember this one
+18:38 <      Dramors> I think I found it
+18:38 <   andrewaclt> tiblock, Dramors the workaround is to clikc Settings->javascript->Libraries
+18:38 <      Dramors> http://youtrack.jetbrains.com/issue/WEB-10533
+18:38 <      Dramors> Yeah, we found the same thing
+18:38 <        Janos> Aria, sorry no idea what behavior you are refering to, can you explain a bit ?
+18:38 -!- whiskers75 is now known as meow
+18:38 <      Dramors> Did you try it?
+18:38 <   andrewaclt> http://youtrack.jetbrains.com/issue/WEB-6667
+18:39 -!- meow is now known as whiskers75
+18:39 <   andrewaclt> Dramors, yes I tried it awhile ago
+18:39 <      Dramors> Gonna give it a shot
+18:39 <   andrewaclt> Dramors, tiblock just tried and it works
+18:41 <   andrewaclt> Dramors, I didn't follow 10533
+18:42 <      Dramors> andrewaclt: Still having the issue here
+18:42 <   andrewaclt> Dramors, tiblock this is what works for me http://youtrack.jetbrains.com/issue/WEB-6667#comment=27-589563
