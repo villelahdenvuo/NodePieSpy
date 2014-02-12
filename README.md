@@ -1,5 +1,4 @@
-#NodePieSpy
-
+#NodePieSpy [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/tuhoojabotti/nodepiespy/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 [![Social graph of #node.js](./media/nodepiespy_nodejs.png)](http://tuhoojabotti.github.io/NodePieSpy-Client/)
 
