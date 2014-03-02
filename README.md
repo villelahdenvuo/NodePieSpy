@@ -1,4 +1,4 @@
-#NodePieSpy [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/tuhoojabotti/nodepiespy/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+#NodePieSpy
 
 [![Social graph of #node.js](./media/nodepiespy_nodejs.png)](http://tuhoojabotti.github.io/NodePieSpy-Client/)
 
@@ -8,14 +8,17 @@
 
  * Modular structure
    * Easy to expand with new heuristics and algorithms.
- * JSON based REST-like backend
+ * JSON based RESTfulish API
    * Very simple to use with AJAX.
- * Code documentation with JSDoc:
-   * http://tuhoojabotti.github.io/NodePieSpy/
  * Frontend here with [D3.js](http://d3js.org/):
    * https://github.com/tuhoojabotti/NodePieSpy-Client
- * API currently running here:
-   * http://lahdenvuo.info/social/graph/node.js.json
+
+## Documentation
+
+ * [API documentation](http://docs.nodepiespy.apiary.io/)
+   * Includes a mock server you can test with.
+ * [Code documentation](http://tuhoojabotti.github.io/NodePieSpy/)
+   * Generated with JSDoc.
 
 ## License (MIT)
 
